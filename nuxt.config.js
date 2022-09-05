@@ -31,18 +31,19 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    // https://go.nuxtjs.dev/pwa
+    "nuxt-webfontloader",
     "@nuxtjs/pwa",
-    // https://go.nuxtjs.dev/content
     "@nuxt/content",
   ],
-
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
-
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  webfontloader: {
+    google: {
+      families: [
+        "Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italics&display=swap",
+      ],
+    },
+  },
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
