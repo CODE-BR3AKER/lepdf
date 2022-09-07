@@ -1,9 +1,10 @@
 <template>
-  <header class="text-gray-600 body-font">
+  <header class="body-font mb-12 mt-8 text-lg font-light">
     <div
-      class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      class="container mx-auto flex px-6 flex-wrap flex-col md:flex-row items-center"
     >
-      <a
+      <nuxt-link
+        to="/"
         class="flex title-font font-bold items-center text-main mb-4 md:mb-0 text-2xl"
       >
         <svg
@@ -27,33 +28,43 @@
           />
         </svg>
         <span class="ml-3">Ensah</span><span class="text-accent">.org</span>
-      </a>
+      </nuxt-link>
       <nav
-        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        class="md:mx-auto flex flex-wrap items-center justify-center text-title"
       >
-        <a class="mr-5 hover:text-gray-900" href="/#about">À propos</a>
-        <a class="mr-5 hover:text-gray-900">Resources</a>
-        <nuxt-link to="/blog" class="mr-5 hover:text-gray-900">Blog</nuxt-link>
-        <nuxt-link to="/work" class="mr-5 hover:text-gray-900"
-          >Travail</nuxt-link
-        >
+        <a class="mr-4 hover:text-gray-900" href="/#about">À propos</a>
+        <a class="mr-4 hover:text-gray-900">Resources</a>
+        <nuxt-link to="/blog" class="mr-4 hover:text-gray-900">Blog</nuxt-link>
+        <nuxt-link to="/work" class="hover:text-gray-900">Travail</nuxt-link>
+        <slot name="switch"> </slot>
       </nav>
-      <button
-        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+      <a
+        class="text-text inline-flex items-center p-2 border border-title hover:text-title mt-4 md:mt-0"
+        href="https://github.com/CODE-BR3AKER/ensah"
+        target="_blank"
       >
-        Star on Github
         <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          class="w-4 h-4 ml-1"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2"
         >
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5807 20.2772 21.0497 21.7437 19.0074C23.2101 16.965 23.9993 14.5143 24 12C24 5.37 18.63 0 12 0Z"
+            fill="currentColor"
+          />
         </svg>
-      </button>
+        Star on Github
+      </a>
     </div>
   </header>
 </template>
+<style scoped>
+nav a:hover {
+  color: var(--links);
+}
+</style>

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Header />
+    <Header>
+      <template v-slot:switch>
+        <SwitchColor />
+      </template>
+    </Header>
     <Nuxt />
     <Footer />
   </div>
@@ -20,8 +24,23 @@
 :root {
   --main: #f15523;
   --accent: #f49c6d;
-  --text: #2e2e2e;
+  --links: #29a5e3;
 }
+.light {
+  --background: #ffffff;
+  --card: #fefefe;
+  --text: #2e2e2e;
+  --title: #000000;
+  --secondary: #f0f0f0;
+}
+.dark {
+  --background: #001e26;
+  --card: #002631;
+  --text: #d7d7d7;
+  --title: #ffffff;
+  --secondary: #003543;
+}
+
 body {
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,5 +48,6 @@ body {
   max-width: 1216px;
   margin: 0 auto;
   padding: 0px;
+  background: var(--background);
 }
 </style>
