@@ -29,7 +29,7 @@
 .light {
   --background: #ffffff;
   --card: #fefefe;
-  --text: #2e2e2e;
+  --text: #454545;
   --title: #000000;
   --secondary: #f0f0f0;
 }

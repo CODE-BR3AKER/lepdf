@@ -1,5 +1,5 @@
 <template>
-  <footer class="body-font text-text font-light">
+  <footer class="body-font text-text font-light mt-16">
     <hr class="bg-text" />
     <div
       class="container px-5 py-2 mb-10 mx-auto flex items-center sm:flex-row flex-col"
@@ -27,7 +27,7 @@
             fill="currentColor"
           />
         </svg>
-        <span class="ml-3 text-xl">ENSAH.org</span>
+        <span class="ml-3 text-xl">Ensah.org</span>
       </a>
       <p
         class="sm:ml-4 sm:pl-4 sm:border-l sm:border-text sm:py-2 sm:mt-0 mt-4"
