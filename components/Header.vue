@@ -1,5 +1,6 @@
 <template>
-  <header class="body-font mb-12 mt-8 text-lg font-light">
+  <header class="relative body-font mb-12 mt-8 text-lg font-light">
+    <span class="bg-circle hidden md:inline-flex"></span>
     <div
       class="container mx-auto flex px-6 flex-wrap flex-col md:flex-row items-center"
     >
@@ -33,7 +34,24 @@
         class="md:mx-auto flex flex-wrap items-center justify-center text-title"
       >
         <a class="mr-4 hover:text-gray-900" href="/#about">À propos</a>
-        <a class="mr-4 hover:text-gray-900">Resources</a>
+        <a class="mr-4 hover:text-gray-900 flex justify-center items-center">
+          Resources
+          <!-- Rotate 180 On click-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ml-2 h-4 w-4 transition-transform"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </a>
         <nuxt-link to="/blog" class="mr-4 hover:text-gray-900">Blog</nuxt-link>
         <nuxt-link to="/work" class="hover:text-gray-900">Travail</nuxt-link>
         <slot name="switch"> </slot>
@@ -64,6 +82,20 @@
   </header>
 </template>
 <style scoped>
+.bg-circle {
+  position: absolute !important;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #f15523 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  opacity: 0.15 !important;
+  pointer-events: none !important;
+  left: -20% !important;
+  top: -6rem !important;
+  width: 640px !important;
+  height: 640px !important;
+}
 nav a:hover {
   color: var(--links);
 }

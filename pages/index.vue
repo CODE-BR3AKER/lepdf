@@ -50,7 +50,7 @@
         author="Zakaria"
       />
     </section>
-    <h2 class="mt-12">
+    <h2 class="mt-12" id="paths">
       Filieres
       <svg
         xmlns="http://www.w3.org/2000/svg"
