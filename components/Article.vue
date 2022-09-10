@@ -18,7 +18,7 @@
         </p>
         <p
           :to="link"
-          class="block text-xl font-medium text-title mt-3 hover:text-links"
+          class="block text-lg md:text-xl font-medium text-title mt-3 hover:text-links"
         >
           {{ title }} &#8594;
         </p>

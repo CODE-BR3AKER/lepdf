@@ -2,10 +2,10 @@
   <footer class="body-font text-text font-light mt-16">
     <hr class="bg-text" />
     <div
-      class="container px-5 py-2 mb-10 mx-auto flex items-center sm:flex-row flex-col"
+      class="container px-4 lg:px-12 py-2 mb-10 mx-auto flex items-center lg:flex-row flex-col"
     >
       <a
-        class="flex title-font font-medium items-center md:justify-start justify-center"
+        class="flex title-font font-medium items-center lg:justify-start justify-center"
       >
         <svg
           width="27"
@@ -30,12 +30,12 @@
         <span class="ml-3 text-xl">Ensah.org</span>
       </a>
       <p
-        class="sm:ml-4 sm:pl-4 sm:border-l sm:border-text sm:py-2 sm:mt-0 mt-4"
+        class="lg:ml-4 lg:pl-4 lg:border-l lg:border-text lg:py-2 lg:mt-0 mt-4"
       >
         &copy; 2022 All copyrights reserved.
       </p>
       <span
-        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        class="inline-flex lg:ml-auto lg:mt-0 mt-4 justify-center lg:justify-start"
       >
         Designed &amp; Coded with ♡ by
         <a

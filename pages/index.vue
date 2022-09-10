@@ -22,17 +22,9 @@
     </h2>
 
     <section
-      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto"
+      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-6 md:px-4 lg:px-2"
     >
       <!-- post.slug-->
-      <Article
-        title="Programmer son travail à distance"
-        img="/blog/travail a distance.jpg"
-        link="/blog"
-        category="News"
-        date="Aout 8, 2022"
-        author="Zakaria"
-      />
       <Article
         title="Programmer son travail à distance"
         img="/blog/travail a distance.jpg"
@@ -69,7 +61,7 @@
         ></path>
       </svg>
     </h2>
-    <section class="my-12 flex mx-auto justify-between flex-wrap items-center">
+    <section class="my-12 flex mx-auto justify-center items-center flex-wrap">
       <Card
         v-for="(sub, id) in subjects"
         :key="id"
@@ -98,21 +90,21 @@
       </svg>
     </h2>
     <section
-      class="my-12 flex justify-between md:flex-row flex-col-reverse text-text"
+      class="my-12 flex justify-between lg:flex-row flex-col text-text px-8 lg:px-0 max-w-5xl mx-auto"
     >
       <img src="ensah.jpg" alt="ensah pic" class="mx-4" />
-      <div class="mx-4 md:mx-10 flex flex-col justify-around">
-        <h3 class="font-medium text-3xl mb-4 md:mb-0 text-title">
+      <div class="mx-4 lg:mx-10 flex flex-col justify-around">
+        <h3 class="font-medium text-3xl mt-8 lg:mt-0 text-title">
           L'idée de site
         </h3>
-        <p class="text-lg max-w-xl mb-4 md:mb-0">
+        <p class="text-lg max-w-xl mb-4 lg:mb-0">
           Initiative d’un ensahist, pour documenter les resources souvent
           partagés dans les groupes whatsapp et les drives pour une mellieur
           accéssibilité. Le contenu maintenant est gérer par l’association des
           étudiants phoenix.
         </p>
         <svg
-          class="mb-4 md:mb-0"
+          class="mb-4 lg:mb-0"
           width="99"
           height="56"
           viewBox="0 0 99 56"
@@ -147,7 +139,7 @@
         ></path>
       </svg>
     </h2>
-    <section class="mb-12 flex mx-auto justify-between flex-wrap items-center">
+    <section class="mb-12 flex mx-auto justify-center flex-wrap items-center">
       <Card name="Outils scientifiques" icon="calculator" link="res/tools" />
       <Card name="Formations en ligne" icon="graduation-cap" link="res/study" />
       <Card name="Chaines d'ingénieurie" icon="video" link="res/youtube" />
@@ -157,62 +149,22 @@
 </template>
 
 <script>
+import pathsData from "~/assets/paths.json";
 export default {
+  head() {
+    return {
+      title: "Home",
+    };
+  },
   data() {
     return {
-      subjects: [
-        {
-          name: "cycle préparatoire 1",
-          icon: "pencil-ruler",
-          idx: "ap1",
-        },
-        {
-          name: "cycle préparatoire 2",
-          icon: "pencil-ruler",
-          idx: "ap2",
-        },
-        {
-          name: "génie informatique",
-          icon: "terminal",
-          idx: "info",
-        },
-        {
-          name: "génie civil",
-          icon: "hard-hat",
-          idx: "civil",
-        },
-        {
-          name: "génie data",
-          icon: "chart-bar",
-          idx: "id",
-        },
-        {
-          name: "génie mécanique",
-          icon: "cog",
-          idx: "meca",
-        },
-        {
-          name: "génie energétique",
-          icon: "radiation",
-          idx: "energ",
-        },
-        {
-          name: "génie eau & env",
-          icon: "tint",
-          idx: "env",
-        },
-      ],
+      subjects: pathsData,
     };
   },
 };
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 main {
   min-height: 100vh;
 }

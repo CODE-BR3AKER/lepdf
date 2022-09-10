@@ -1,8 +1,7 @@
 <template>
-  <header class="relative body-font mb-12 mt-8 text-lg font-light">
-    <span class="bg-circle hidden md:inline-flex"></span>
+  <header class="body-font mb-12 mt-8 text-lg font-light">
     <div
-      class="container mx-auto flex px-6 flex-wrap flex-col md:flex-row items-center"
+      class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >
       <nuxt-link
         to="/"
@@ -28,36 +27,23 @@
             fill="#F49C6D"
           />
         </svg>
-        <span class="ml-3">Ensah</span><span class="text-accent">.org</span>
+        <span class="hidden md:inline ml-3">Ensah</span
+        ><span class="hidden md:inline text-accent">.org</span>
       </nuxt-link>
       <nav
-        class="md:mx-auto flex flex-wrap items-center justify-center text-title"
+        class="hidden md:mx-auto md:flex flex-wrap items-center justify-center text-title"
       >
-        <a class="mr-4 hover:text-gray-900" href="/#about">À propos</a>
-        <a class="mr-4 hover:text-gray-900 flex justify-center items-center">
-          Resources
-          <!-- Rotate 180 On click-->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="ml-2 h-4 w-4 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            ></path>
-          </svg>
-        </a>
-        <nuxt-link to="/blog" class="mr-4 hover:text-gray-900">Blog</nuxt-link>
-        <nuxt-link to="/work" class="hover:text-gray-900">Travail</nuxt-link>
+        <a class="mr-4" href="/#about">À propos</a>
+        <nuxt-link class="mr-4" to="/paths">Resources</nuxt-link>
+        <nuxt-link to="/blog" class="mr-4">Blog</nuxt-link>
+        <nuxt-link to="/work">Travail</nuxt-link>
         <slot name="switch"> </slot>
       </nav>
+      <div class="cursor-pointer text-2xl md:hidden">
+        <i class="fas fa-bars" @click="toggle"></i>
+      </div>
       <a
-        class="text-text inline-flex items-center p-2 border border-title hover:text-title mt-4 md:mt-0"
+        class="hidden text-text md:inline-flex items-center p-2 border border-title hover:text-title"
         href="https://github.com/CODE-BR3AKER/ensah"
         target="_blank"
       >
@@ -79,24 +65,42 @@
         Star on Github
       </a>
     </div>
+    <div class="block md:hidden">
+      <nav
+        v-if="isOpen"
+        class="mx-2 flex flex-col items-center text-center md:hidden mt-8 rounded-md bg-card shadow-lg h-56 pt-4"
+      >
+        <nuxt-link class="mobile-link" to="/">Accueil</nuxt-link>
+        <nuxt-link class="mobile-link" to="/#about">À propos</nuxt-link>
+        <nuxt-link class="mobile-link" to="/paths">Resources</nuxt-link>
+        <nuxt-link class="mobile-link" to="/blog">Blog</nuxt-link>
+        <nuxt-link class="mobile-link" to="/work">Travail</nuxt-link>
+      </nav>
+    </div>
   </header>
 </template>
 <style scoped>
-.bg-circle {
-  position: absolute !important;
-  background-image: radial-gradient(
-    50% 50% at 50% 50%,
-    #f15523 0,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-  opacity: 0.15 !important;
-  pointer-events: none !important;
-  left: -20% !important;
-  top: -6rem !important;
-  width: 640px !important;
-  height: 640px !important;
-}
 nav a:hover {
   color: var(--links);
 }
+.nuxt-link-exact-active {
+  color: var(--accent) !important;
+}
+.mobile-link {
+  @apply block px-3 py-2 text-sm text-text font-medium text-center;
+}
 </style>
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+};
+</script>

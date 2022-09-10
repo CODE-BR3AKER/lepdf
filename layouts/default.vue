@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="relative overflow-hidden">
+    <span class="bg-circle bg-circle-main hidden md:inline-flex"></span>
+    <span class="bg-circle bg-circle-secondary hidden md:inline-flex"></span>
     <Header>
       <template v-slot:switch>
         <SwitchColor />
@@ -45,9 +47,28 @@ body {
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  max-width: 1216px;
   margin: 0 auto;
   padding: 0px;
   background: var(--background);
+}
+.bg-circle {
+  position: absolute !important;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #f15523 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  opacity: 0.15 !important;
+  pointer-events: none !important;
+  width: 640px !important;
+  height: 640px !important;
+}
+.bg-circle-main {
+  left: -20% !important;
+  top: -6rem !important;
+}
+.bg-circle-secondary {
+  right: -20% !important;
+  top: 30rem !important;
 }
 </style>
