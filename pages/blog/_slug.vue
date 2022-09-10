@@ -48,6 +48,7 @@
         </ul>
       </nav>
       <nuxt-content class="content-blog" :document="post" />
+      <LikeBtn />
     </article>
   </main>
 </template>
