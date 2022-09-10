@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1
-      class="text-5xl md:text-6xl font-bold leading-none mt-16 text-title text-center mx-auto"
+      class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
       Paths
     </h1>

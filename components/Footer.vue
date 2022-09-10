@@ -1,8 +1,8 @@
 <template>
-  <footer class="body-font text-text font-light mt-16">
+  <footer class="body-font text-text font-light mt-16 px-4 lg:px-12">
     <hr class="bg-text" />
     <div
-      class="container px-4 lg:px-12 py-2 mb-10 mx-auto flex items-center lg:flex-row flex-col"
+      class="container py-2 mb-10 mx-auto flex items-center lg:flex-row flex-col"
     >
       <a
         class="flex title-font font-medium items-center lg:justify-start justify-center"

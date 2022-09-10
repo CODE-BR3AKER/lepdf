@@ -39,7 +39,7 @@
         <nuxt-link to="/work">Travail</nuxt-link>
         <slot name="switch"> </slot>
       </nav>
-      <div class="cursor-pointer text-2xl md:hidden">
+      <div class="cursor-pointer text-2xl md:hidden text-title">
         <i class="fas fa-bars" @click="toggle"></i>
       </div>
       <a

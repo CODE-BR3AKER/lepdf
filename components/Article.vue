@@ -12,13 +12,13 @@
         </div>
         <p class="text-light text-text mt-4">
           <span class="rounded bg-main text-white font-medium mr-2 px-2 py-1">
-            {{ category }}
+            Tips
           </span>
           {{ date }} . {{ author }}
         </p>
         <p
           :to="link"
-          class="block text-lg md:text-xl font-medium text-title mt-3 hover:text-links"
+          class="block text-lg font-medium text-title mt-3 hover:text-links"
         >
           {{ title }} &#8594;
         </p>
@@ -28,6 +28,6 @@
 </template>
 <script>
 export default {
-  props: ["title", "img", "link", "category", "date", "author"],
+  props: ["title", "img", "link", "date", "author"],
 };
 </script>

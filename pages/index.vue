@@ -22,24 +22,17 @@
     </h2>
 
     <section
-      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-6 md:px-4 lg:px-2"
+      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-6 sm:px-8 md:px-0"
     >
       <!-- post.slug-->
       <Article
-        title="Programmer son travail à distance"
-        img="/blog/travail a distance.jpg"
-        link="/blog"
-        category="News"
-        date="Aout 8, 2022"
-        author="Zakaria"
-      />
-      <Article
-        title="Programmer son travail à distance"
-        img="/blog/travail a distance.jpg"
-        link="/blog"
-        category="News"
-        date="Aout 8, 2022"
-        author="Zakaria"
+        v-for="(post, id) in posts"
+        :key="id"
+        :title="post.title"
+        :img="post.thumb"
+        :link="`/blog/` + post.slug"
+        :date="formatDate(post.updatedAt)"
+        :author="post.author.name"
       />
     </section>
     <h2 class="mt-12" id="paths">
@@ -151,6 +144,16 @@
 <script>
 import pathsData from "~/assets/paths.json";
 export default {
+  async asyncData({ $content }) {
+    const posts = await $content("blog")
+      .sortBy("createdAt", "desc")
+      .only(["title", "slug", "thumb", "updatedAt", "author"])
+      .limit(3)
+      .fetch();
+    return {
+      posts,
+    };
+  },
   head() {
     return {
       title: "Home",
@@ -160,6 +163,15 @@ export default {
     return {
       subjects: pathsData,
     };
+  },
+  methods: {
+    formatDate(date) {
+      let da = new Date(date);
+      let ans = new Intl.DateTimeFormat("fr-FR", {
+        dateStyle: "full",
+      }).format(da);
+      return ans;
+    },
   },
 };
 </script>
