@@ -16,39 +16,39 @@
       >
         <svg
           class="transform transition duration-50 hover:scale-110"
-          width="34"
-          height="34"
-          viewBox="0 0 34 34"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
-            width="34"
-            height="34"
+            width="40"
+            height="40"
             rx="5"
-            fill="url(#paint0_linear_1801_10)"
+            fill="url(#paint0_linear_649_37)"
           />
           <path
-            v-if="userLikeCount == 1"
-            d="M0 22H34V29C34 31.7614 31.7614 34 29 34H5C2.23858 34 0 31.7614 0 29V22Z"
-            fill="url(#paint1_linear_1801_11)"
+            v-if="userLikeCount === 1"
+            d="M0.445801 25.8823H40.4458V35C40.4458 37.7614 38.2072 40 35.4458 40H5.4458C2.68438 40 0.445801 37.7614 0.445801 35V25.8823Z"
+            fill="url(#paint1_linear_649_38)"
           />
           <path
-            v-if="userLikeCount == 2"
-            d="M0 12H34V29C34 31.7614 31.7614 34 29 34H5C2.23858 34 0 31.7614 0 29V12Z"
-            fill="url(#paint1_linear_1801_12)"
+            v-if="userLikeCount === 2"
+            d="M0.891602 14.1177H40.8916V35C40.8916 37.7614 38.653 40 35.8916 40H5.8916C3.13018 40 0.891602 37.7615 0.891602 35V14.1177Z"
+            fill="url(#paint1_linear_649_39)"
           />
           <path
-            d="M13.125 11C10.8469 11 9 12.8469 9 15.125C9 19.25 13.875 23 16.5 23.8723C19.125 23 24 19.25 24 15.125C24 12.8469 22.1531 11 19.875 11C18.48 11 17.2463 11.6926 16.5 12.7528C16.1196 12.211 15.6143 11.7688 15.0268 11.4637C14.4393 11.1586 13.787 10.9995 13.125 11Z"
+            d="M15.4413 12.9412C12.7612 12.9412 10.5884 15.114 10.5884 17.7941C10.5884 22.647 16.3237 27.0588 19.4119 28.085C22.5001 27.0588 28.2354 22.647 28.2354 17.7941C28.2354 15.114 26.0626 12.9412 23.3825 12.9412C21.7413 12.9412 20.2899 13.756 19.4119 15.0032C18.9644 14.3658 18.3699 13.8456 17.6788 13.4867C16.9876 13.1277 16.2201 12.9406 15.4413 12.9412Z"
             fill="currentColor"
           />
           <defs>
             <linearGradient
-              id="paint0_linear_1801_10"
-              x1="3"
-              y1="4"
-              x2="31"
-              y2="34"
+              id="paint0_linear_649_37"
+              x1="3.52941"
+              y1="4.70588"
+              x2="36.4706"
+              y2="40"
               gradientUnits="userSpaceOnUse"
             >
               <stop v-if="!likesMaxed" stop-color="#545454" />
@@ -57,44 +57,44 @@
               <stop v-if="likesMaxed" offset="1" stop-color="#ff6a00" />
             </linearGradient>
             <linearGradient
-              id="paint0_linear_1801_11"
-              x1="3"
-              y1="4"
-              x2="31"
-              y2="34"
+              id="paint0_linear_649_38"
+              x1="3.97521"
+              y1="4.70588"
+              x2="36.9164"
+              y2="40"
               gradientUnits="userSpaceOnUse"
             >
               <stop stop-color="#545454" />
               <stop offset="1" stop-color="#B8B8B8" />
             </linearGradient>
             <linearGradient
-              id="paint1_linear_1801_11"
-              x1="4.5"
-              y1="25"
-              x2="27.8216"
-              y2="29.2249"
+              id="paint1_linear_649_38"
+              x1="5.73992"
+              y1="29.4117"
+              x2="33.1771"
+              y2="34.3822"
               gradientUnits="userSpaceOnUse"
             >
               <stop stop-color="#EE0979" />
               <stop offset="1" stop-color="#FF6A00" />
             </linearGradient>
             <linearGradient
-              id="paint0_linear_1801_12"
-              x1="3"
-              y1="4"
-              x2="31"
-              y2="34"
+              id="paint0_linear_649_39"
+              x1="4.42101"
+              y1="4.70588"
+              x2="37.3622"
+              y2="40"
               gradientUnits="userSpaceOnUse"
             >
               <stop stop-color="#545454" />
               <stop offset="1" stop-color="#B8B8B8" />
             </linearGradient>
             <linearGradient
-              id="paint1_linear_1801_12"
-              x1="4.5"
-              y1="17.5"
-              x2="28.354"
-              y2="19.8571"
+              id="paint1_linear_649_39"
+              x1="6.18572"
+              y1="20.5883"
+              x2="34.2493"
+              y2="23.3613"
               gradientUnits="userSpaceOnUse"
             >
               <stop stop-color="#EE0979" />
@@ -102,73 +102,6 @@
             </linearGradient>
           </defs>
         </svg>
-        <!--
-        <svg
-          class="transform transition duration-50 hover:scale-110"
-          width="34"
-          height="34"
-          viewBox="0 0 34 34"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            width="34"
-            height="34"
-            rx="5"
-            fill="url(#paint0_linear_1176_4)"
-          />
-          <path
-            v-if="userLikeCount == 1"
-            d="M0 22H34V29C34 31.7614 31.7614 34 29 34H5C2.23858 34 0 31.7614 0 29V22Z"
-            fill="url(#paint1_linear_1176_4)"
-          />
-          <path
-            v-if="userLikeCount == 2"
-            d="M0 12H34V29C34 31.7614 31.7614 34 29 34H5C2.23858 34 0 31.7614 0 29V12Z"
-            fill="url(#paint1_linear_1197_12)"
-          />
-          <path
-            d="M22.8419 16.9679C22.8174 16.8457 22.7587 16.7331 22.6726 16.6431C22.5864 16.5531 22.4764 16.4895 22.3554 16.4597L17.8337 15.3286L19.5059 11.4258C19.5642 11.2904 19.5753 11.1393 19.5374 10.9968C19.4995 10.8543 19.4148 10.7287 19.297 10.6401C19.1794 10.5509 19.0351 10.504 18.8876 10.5068C18.74 10.5097 18.5977 10.5622 18.4836 10.6559L11.233 16.5882C11.1384 16.6656 11.0672 16.7677 11.0273 16.8832C10.9874 16.9987 10.9804 17.123 11.0071 17.2423C11.0338 17.3615 11.0931 17.471 11.1783 17.5585C11.2636 17.646 11.3716 17.7081 11.4901 17.7378L15.9189 18.8458L13.714 22.7044C13.6572 22.8047 13.6275 22.9181 13.6281 23.0333C13.6287 23.1486 13.6594 23.2617 13.7173 23.3614C13.7752 23.461 13.8581 23.5438 13.9579 23.6014C14.0577 23.6591 14.1709 23.6896 14.2862 23.6899C14.4288 23.6901 14.5677 23.6438 14.6817 23.558L22.5914 17.6257C22.6911 17.551 22.7675 17.4495 22.8118 17.333C22.8561 17.2166 22.8666 17.09 22.8419 16.9679V16.9679Z"
-            fill="currentColor"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_1176_4"
-              x1="3"
-              y1="4"
-              x2="31"
-              y2="34"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop v-if="!likesMaxed" stop-color="#545454" />
-              <stop v-if="!likesMaxed" offset="1" stop-color="#B1B1B1" />
-              <stop v-if="likesMaxed" stop-color="#39786D" />
-              <stop v-if="likesMaxed" offset="1" stop-color="#28534B" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_1176_4"
-              x1="4.5"
-              y1="25"
-              x2="27.8216"
-              y2="29.2249"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#39786D" />
-              <stop offset="1" stop-color="#28534B" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_1197_12"
-              x1="4.5"
-              y1="17.5"
-              x2="28.354"
-              y2="19.8571"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#39786D" />
-              <stop offset="1" stop-color="#28534B" />
-            </linearGradient>
-          </defs>
-        </svg>-->
       </button>
     </div>
     <div class="ml-2 text-color-text">

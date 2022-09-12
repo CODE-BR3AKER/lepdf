@@ -1,7 +1,22 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
-
+  publicRuntimeConfig: {
+    axios: {
+      baseURL:
+        process.env.NODE_ENV === "production"
+          ? process.env.BASE_URL || "http://localhost:8888/"
+          : "http://localhost:8888/",
+    },
+  },
+  privateRuntimeConfig: {
+    axios: {
+      baseURL:
+        process.env.NODE_ENV === "production"
+          ? process.env.BASE_URL || "http://localhost:8888/"
+          : "http://localhost:8888/",
+    },
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: "ensah.org | %s",
@@ -62,6 +77,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     // https://go.nuxtjs.dev/tailwindcss
+    "@nuxtjs/netlify-files",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
   ],

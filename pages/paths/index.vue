@@ -21,7 +21,7 @@ import pathsData from "~/assets/paths.json";
 export default {
   head() {
     return {
-      title: "Home",
+      title: "Resources",
     };
   },
   data() {
