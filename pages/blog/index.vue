@@ -17,6 +17,7 @@
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
         :author="post.author.name"
+        loading="lazy"
       />
     </section>
   </main>

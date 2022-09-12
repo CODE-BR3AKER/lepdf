@@ -25,7 +25,12 @@
         class="flex flex-col sm:flex-row justify-between text-base my-6 text-text"
       >
         <p class="mb-2 sm:mb-0">Écrit par: {{ post.author.name }}</p>
-        <p>540 views. 400 likes</p>
+        <p>
+          <span v-if="$fetchState.pending" class="animate-pulse"> ...</span>
+          <span v-else> {{ views }}</span> views.
+          <span v-if="$fetchState.pending" class="animate-pulse"> ...</span>
+          <span v-else> {{ initialLikes }}</span> likes
+        </p>
       </div>
       <nav class="pb-6">
         <h2 class="block mb-4 text-xl font-medium">
@@ -56,6 +61,23 @@ export default {
     const post = await $content("blog", params.slug).fetch();
     return {
       post,
+    };
+  },
+  async fetch() {
+    const { data } = await this.$axios.get(
+      `/.netlify/functions/fetch_likes_for_blog?slug=${this.$route.params.slug}`
+    );
+    const { test } = await this.$axios.get(
+      `/.netlify/functions/fetch_views_for_blog?slug=${this.$route.params.slug}`
+    );
+    this.initialLikes = data.likes;
+    this.views = test.views;
+  },
+  fetchOnServer: false,
+  data() {
+    return {
+      initialLikes: null,
+      views: null,
     };
   },
   head() {

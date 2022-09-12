@@ -85,7 +85,7 @@
     <section
       class="my-12 flex justify-between lg:flex-row flex-col text-text px-8 lg:px-0 max-w-5xl mx-auto"
     >
-      <img src="ensah.jpg" alt="ensah pic" class="mx-4" />
+      <img src="ensah.jpg" alt="ensah pic" class="mx-4" loading="lazy" />
       <div class="mx-4 lg:mx-10 flex flex-col justify-around">
         <h3 class="font-medium text-3xl mt-8 lg:mt-0 text-title">
           L'idée de site
