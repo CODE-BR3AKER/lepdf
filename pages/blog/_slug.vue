@@ -63,6 +63,12 @@ export default {
       post,
     };
   },
+  data() {
+    return {
+      initialLikes: null,
+      views: null,
+    };
+  },
   async fetch() {
     const { data } = await this.$axios.get(
       `/.netlify/functions/fetch_likes_for_blog?slug=${this.$route.params.slug}`
@@ -74,12 +80,6 @@ export default {
     this.views = test.views;
   },
   fetchOnServer: false,
-  data() {
-    return {
-      initialLikes: null,
-      views: null,
-    };
-  },
   head() {
     return {
       title: this.post.title,
