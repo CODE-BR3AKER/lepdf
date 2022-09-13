@@ -73,7 +73,7 @@ export default {
     const { data } = await this.$axios.get(
       `/.netlify/functions/fetch_views_for_blog?slug=${this.$route.params.slug}`
     );
-    this.views = test.views;
+    this.views = data.views;
   },
   fetchOnServer: false,
   head() {
