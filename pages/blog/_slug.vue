@@ -83,13 +83,27 @@ export default {
     const { data } = await this.$axios.get(
       `/.netlify/functions/fetch_views_for_blog?slug=${this.$route.params.slug}`
     );
-    this.intialViews = data.views;
+    this.initialViews = data.views;
   },
   fetchOnServer: false,
+  mounted() {
+    addView();
+  },
   head() {
     return {
       title: this.post.title,
     };
+  },
+  methods: {
+    addView() {
+      this.initialViews++;
+      this.incrementViews();
+    },
+    async incrementViews() {
+      await this.$axios.post(
+        `/.netlify/functions/register-view?slug=${this.$route.params.slug}`
+      );
+    },
   },
 };
 </script>
