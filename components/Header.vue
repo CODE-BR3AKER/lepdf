@@ -4,6 +4,7 @@
       class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >
       <nuxt-link
+        id="logo"
         to="/"
         class="flex title-font font-bold items-center text-main mb-4 md:mb-0 text-2xl"
       >
@@ -36,7 +37,10 @@
         <a class="mr-4" href="/#about">À propos</a>
         <nuxt-link class="mr-4" to="/paths">Resources</nuxt-link>
         <nuxt-link to="/blog" class="mr-4">Blog</nuxt-link>
-        <nuxt-link to="/work">Travail</nuxt-link>
+        <nuxt-link to="/work" class="mr-4">Travail</nuxt-link>
+        <nuxt-link to="/search">
+          <IconSearch />
+        </nuxt-link>
         <slot name="switch"> </slot>
       </nav>
       <div class="cursor-pointer text-2xl md:hidden text-title">
@@ -83,7 +87,7 @@
 nav a:hover {
   color: var(--links);
 }
-.nuxt-link-exact-active {
+.nuxt-link-exact-active:not("#logo") {
   color: var(--accent) !important;
 }
 .mobile-link {
