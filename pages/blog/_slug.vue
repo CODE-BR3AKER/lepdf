@@ -24,7 +24,7 @@
       <div
         class="flex flex-col sm:flex-row justify-between text-base my-6 text-text"
       >
-        <p class="mb-2 sm:mb-0">Écrit par: {{ post.author.name }}</p>
+        <p class="mb-2 sm:mb-0">Écrit par: {{ post.author }}</p>
         <p>
           <span v-if="$fetchState.pending" class="animate-pulse"> ...</span>
           <span v-else-if="$fetchState.error">{{

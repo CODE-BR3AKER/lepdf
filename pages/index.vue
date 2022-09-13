@@ -32,7 +32,7 @@
         :img="post.thumb"
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
-        :author="post.author.name"
+        :author="post.author"
       />
     </section>
     <h2 class="mt-12" id="paths">

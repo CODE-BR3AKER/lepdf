@@ -24,7 +24,7 @@
         :img="post.thumb"
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
-        :author="post.author.name"
+        :author="post.author"
         :description="post.description"
         loading="lazy"
       />
