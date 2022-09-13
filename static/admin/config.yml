@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/blog
 public_folder: /blog
+logo_url: https://ensah2.netlify.app/logo.svg
 
 collections:
   - name: "blog"
