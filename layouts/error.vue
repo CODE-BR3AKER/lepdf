@@ -1,8 +1,8 @@
 <template>
   <main
-    class="flex flex-col items-center justify-center text-center text-color-text mx-8 mt-12"
+    class="flex flex-col items-center justify-center text-center text-title mx-8 mt-12"
   >
-    <h2 class="font-medium text-color-main text-2xl md:text-3xl mb-4">
+    <h2 class="font-medium text-2xl md:text-3xl mb-4">
       Ooops: {{ error.message }} - {{ error.statusCode }}
     </h2>
     <img

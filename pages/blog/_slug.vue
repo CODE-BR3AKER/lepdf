@@ -102,9 +102,6 @@ export default {
       );
     },
   },
-  updated() {
-    this.addView();
-  },
 };
 </script>
 <style>
