@@ -30,14 +30,15 @@
           <span v-else-if="$fetchState.error">{{
             $fetchState.error.message
           }}</span>
-          <span v-else> {{ views }}</span> Views
+          <span v-else> {{ initialViews }}</span>
+          Views
         </p>
       </div>
       <nav class="pb-6">
-        <h2 class="block mb-4 text-xl font-medium">
+        <h2 class="block mb-4 text-xl font-medium text-title">
           <span class="icon icon-link"></span>Content:
         </h2>
-        <ul class="text-color-link font-normal text-base">
+        <ul class="text-links font-normal text-base">
           <li v-for="link of post.toc" :key="link.id">
             <a
               :href="`#${link.id}`"
@@ -51,8 +52,17 @@
           </li>
         </ul>
       </nav>
-      <nuxt-content class="content-blog" :document="post" />
+      <nuxt-content class="content-blog text-text" :document="post" />
       <LikeBtn />
+      <p class="mt-8">
+        Voulez-vous contribuer au blog ? Envoyer vos idées sur
+        <a
+          class="text-main"
+          href="mailto:phoenixade.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20article"
+          target="_blank"
+          >mail</a
+        >.
+      </p>
     </article>
   </main>
 </template>
@@ -66,14 +76,14 @@ export default {
   },
   data() {
     return {
-      views: null,
+      initialViews: null,
     };
   },
   async fetch() {
     const { data } = await this.$axios.get(
       `/.netlify/functions/fetch_views_for_blog?slug=${this.$route.params.slug}`
     );
-    this.views = data.views;
+    this.intialViews = data.views;
   },
   fetchOnServer: false,
   head() {
@@ -83,3 +93,58 @@ export default {
   },
 };
 </script>
+<style>
+.content-blog p {
+  margin-bottom: 20px;
+}
+.content-blog h2 {
+  color: var(--title);
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+}
+.content-blog h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.content-blog h5,
+.content-blog h4,
+.content-blog h3,
+.content-blog h2 {
+  margin: 2rem auto;
+}
+.content-blog blockquote {
+  color: #808080;
+  font-style: italic;
+  padding: 0.5em 1em 0.125em 1em;
+  border-left: 8px solid #808080;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.content-blog img {
+  @apply block my-4;
+}
+.icon.icon-link {
+  background-image: var(--url);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+.content-blog ul {
+  list-style: disc;
+  margin-left: 15px;
+  list-style-position: inside;
+}
+.content-blog ol {
+  list-style: decimal;
+  margin-left: 15px;
+  list-style-position: inside;
+}
+.content-blog li {
+  @apply my-2;
+}
+.content-blog a {
+  @apply underline;
+}
+</style>
