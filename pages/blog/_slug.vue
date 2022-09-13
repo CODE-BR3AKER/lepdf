@@ -54,7 +54,7 @@
       </nav>
       <nuxt-content class="content-blog text-text" :document="post" />
       <LikeBtn />
-      <p class="mt-8">
+      <p class="mt-8 text-text">
         Voulez-vous contribuer au blog ? Envoyer vos idées sur
         <a
           class="text-main"
@@ -103,7 +103,7 @@ export default {
     },
   },
   updated() {
-    addView();
+    this.addView();
   },
 };
 </script>

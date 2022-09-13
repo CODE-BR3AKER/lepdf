@@ -6,10 +6,18 @@
       Blog
     </h1>
     <section
-      class="pt-12 flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-6 sm:px-8 md:px-0"
+      class="pt-12 flex justify-between flex-col my-12 mx-auto max-w-4xl px-6 sm:px-8 md:px-0"
     >
+      <nav class="flex justify-between items-center text-xl m-5 pb-2 border-b">
+        <p class="text-text">
+          <i class="fas fa-sort-alpha-down-alt"></i> Date de publication
+        </p>
+        <a href="#" class="cursor-pointer text-title">
+          <i class="fas fa-rss"></i>
+        </a>
+      </nav>
       <!-- post.slug-->
-      <Article
+      <ArticleCard
         v-for="(post, id) in posts"
         :key="id"
         :title="post.title"
@@ -17,6 +25,7 @@
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
         :author="post.author.name"
+        :description="post.description"
         loading="lazy"
       />
     </section>

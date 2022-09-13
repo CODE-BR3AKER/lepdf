@@ -107,7 +107,7 @@
     <div class="ml-2 text-text">
       <p v-if="$fetchState.pending" class="animate-pulse">...</p>
       <p v-else-if="$fetchState.error">{{ $fetchState.error.message }}</p>
-      <p v-else>{{ initialLikes }}</p>
+      <p v-else>{{ initialLikes }} Likes</p>
     </div>
   </div>
 </template>
