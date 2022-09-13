@@ -27,9 +27,10 @@
         <p class="mb-2 sm:mb-0">Écrit par: {{ post.author.name }}</p>
         <p>
           <span v-if="$fetchState.pending" class="animate-pulse"> ...</span>
-          <span v-else> {{ views }}</span> views.
-          <span v-if="$fetchState.pending" class="animate-pulse"> ...</span>
-          <span v-else> {{ initialLikes }}</span> likes
+          <span v-else-if="$fetchState.error">{{
+            $fetchState.error.message
+          }}</span>
+          <span v-else> {{ views }}</span> Views
         </p>
       </div>
       <nav class="pb-6">
@@ -65,18 +66,13 @@ export default {
   },
   data() {
     return {
-      initialLikes: null,
       views: null,
     };
   },
   async fetch() {
     const { data } = await this.$axios.get(
-      `/.netlify/functions/fetch_likes_for_blog?slug=${this.$route.params.slug}`
-    );
-    const { test } = await this.$axios.get(
       `/.netlify/functions/fetch_views_for_blog?slug=${this.$route.params.slug}`
     );
-    this.initialLikes = data.likes;
     this.views = test.views;
   },
   fetchOnServer: false,
