@@ -86,9 +86,6 @@ export default {
     this.initialViews = data.views;
   },
   fetchOnServer: false,
-  mounted() {
-    addView();
-  },
   head() {
     return {
       title: this.post.title,
@@ -104,6 +101,9 @@ export default {
         `/.netlify/functions/register-view?slug=${this.$route.params.slug}`
       );
     },
+  },
+  updated() {
+    addView();
   },
 };
 </script>
