@@ -6,17 +6,20 @@
       {{ module }}
     </h1>
     <section class="pt-16 flex mx-auto justify-center items-center">
-      <table class="text-title">
+      <table class="text-title text-sm md:text-base">
         <tr>
           <th>Description</th>
-          <th>Année</th>
+          <th class="hidden md:table-cell">Année</th>
           <th>Action</th>
         </tr>
         <tr v-for="(file, id) in path" :key="id">
-          <td>&#128196; {{ file.Filename }}</td>
-          <td class="text-center">2018</td>
-          <td class="text-center">
-            <a :href="file.DirectLink" class="text-links"
+          <td class="w-2/3 md:w-2/4">&#128196; {{ file.Filename }}</td>
+          <td class="hidden md:table-cell w-1/4 text-center">2018</td>
+          <td class="w-1/3 md:w-1/4 text-center">
+            <a
+              :href="file.DirectLink"
+              class="text-links"
+              :download="file.FileName"
               ><i class="fas fa-file-download text-2xl"></i>Télécharger</a
             >
           </td>
@@ -45,7 +48,12 @@ export default {
 </script>
 <style scoped>
 table {
-  width: 70vw;
+  width: 60vw;
+}
+@media only screen and (max-width: 768px) {
+  table {
+    width: 90vw;
+  }
 }
 th {
   background: var(--main);
