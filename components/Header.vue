@@ -1,7 +1,7 @@
 <template>
   <header class="body-font mb-12 lg:mt-8 mt-2 text-lg font-light">
     <div
-      class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between lg:shadow-none shadow-lg"
+      class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >
       <nuxt-link
         id="logo"
