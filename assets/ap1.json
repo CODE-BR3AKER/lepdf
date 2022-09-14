@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Algèbre 1",
+    "icon": "square-root-alt",
+    "idx": "Alg1",
+    "semester": "s1"
+  },
+  {
+    "name": "Analyse 1",
+    "icon": "chart-line",
+    "idx": "Ana1",
+    "semester": "s1"
+  },
+  {
+    "name": "Mécanique 1",
+    "icon": "wrench",
+    "idx": "Meca1",
+    "semester": "s1"
+  },
+  {
+    "name": "Physique 1",
+    "icon": "car-battery",
+    "idx": "Phy1",
+    "semester": "s1"
+  },
+  {
+    "name": "Algèbre 2",
+    "icon": "square-root-alt",
+    "idx": "Alg2",
+    "semester": "s2"
+  },
+  {
+    "name": "Analyse 2",
+    "icon": "chart-line",
+    "idx": "Ana2",
+    "semester": "s2"
+  },
+  {
+    "name": "Physique 2",
+    "icon": "microscope",
+    "idx": "Phy2",
+    "semester": "s2"
+  },
+  {
+    "name": "Chimie 1",
+    "icon": "vial",
+    "idx": "Chi1",
+    "semester": "s2"
+  },
+  {
+    "name": "Géologie",
+    "icon": "compass",
+    "idx": "Geo",
+    "semester": "s2"
+  }
+]
