@@ -8,11 +8,11 @@
     <section
       class="flex justify-between flex-col my-12 mx-auto max-w-4xl px-6 sm:px-8 md:px-0"
     >
-      <nav class="flex justify-between items-center text-xl m-5 pb-2 border-b">
-        <p class="text-text">
-          <i class="fas fa-sort-alpha-down-alt"></i> Date de publication
-        </p>
-        <a href="#" class="cursor-pointer text-title">
+      <nav
+        class="flex justify-between items-center text-xl m-5 pb-2 border-b text-text"
+      >
+        <p><i class="fas fa-sort-alpha-down-alt"></i> Date de publication</p>
+        <a href="#" class="cursor-pointer hover:text-title">
           <i class="fas fa-rss"></i>
         </a>
       </nav>
