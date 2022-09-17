@@ -6,6 +6,9 @@
       <template v-slot:switch>
         <SwitchColor />
       </template>
+      <template v-slot:switchMobile>
+        <SwitchColor />
+      </template>
     </Header>
     <Nuxt />
     <Footer />

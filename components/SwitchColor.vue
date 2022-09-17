@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-pointer ml-4 focus:outline-none" @click="switchTheme">
+  <div class="cursor-pointer mx-4 focus:outline-none" @click="switchTheme">
     <IconSun v-if="getSelectedTheme === 'light'" class="h-5 w-5" />
     <IconMoon v-else class="h-5 w-5" />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <header class="body-font mb-12 lg:mt-8 mt-2 text-lg font-light">
+  <header class="body-font mb-12 lg:mt-8 mt-3 text-lg font-light">
     <div
       class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >
@@ -43,8 +43,9 @@
         </nuxt-link>
         <slot name="switch"> </slot>
       </nav>
-      <div class="cursor-pointer text-2xl md:hidden text-title">
-        <i class="fas fa-bars" @click="toggle"></i>
+      <div class="md:hidden text-title flex items-center">
+        <slot name="switchMobile"> </slot>
+        <i class="fas fa-bars cursor-pointer text-2xl" @click="toggle"></i>
       </div>
       <a
         class="hidden text-text md:inline-flex items-center p-2 border border-title hover:text-title"
