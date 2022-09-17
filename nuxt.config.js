@@ -51,7 +51,6 @@ export default {
         sizes: "16x16",
         href: "/favicon-16x16.png",
       },
-      { rel: "manifest", href: "/site.webmanifest" },
       { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" },
       {
         rel: "stylesheet",
@@ -103,6 +102,28 @@ export default {
       families: [
         "Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italics&display=swap",
       ],
+    },
+  },
+  pwa: {
+    manifest: {
+      name: "ensah.org",
+      short_name: "ensah",
+      icons: [
+        {
+          src: "/icon-192x192.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "/icon.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
+      theme_color: "#F15523",
+      background_color: "#ffffff",
+      lang: "fr",
+      display: "standalone",
     },
   },
   content: {},
