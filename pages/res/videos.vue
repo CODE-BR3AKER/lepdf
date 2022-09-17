@@ -1,5 +1,5 @@
 <template>
-  <main class="md:max-w-6xl max-w-md mx-auto">
+  <main class="md:max-w-6xl mx-6 md:mx-auto">
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >

@@ -1,12 +1,12 @@
 <template>
-  <main class="md:max-w-6xl max-w-md mx-auto">
+  <main class="md:max-w-6xl mx-6 md:mx-auto">
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
       Groupes &amp; Pages
     </h1>
-    <section class="grid-3 pt-16 mx-auto justify-between">
-      <div class="flex flex-col">
+    <section class="grid-3 pt-16 justify-between">
+      <div>
         <List title="Coding Channels" :links="coding">
           <IconFb />
         </List>
@@ -20,7 +20,7 @@
           <IconFb />
         </List>
       </div>
-      <div class="flex flex-col">
+      <div>
         <List title="Général" :links="general">
           <IconYtb />
         </List>
@@ -28,7 +28,7 @@
           <IconInsta />
         </List>
       </div>
-      <div class="flex flex-col">
+      <div>
         <List title="Records des séances" :links="records">
           <IconFb />
         </List>
