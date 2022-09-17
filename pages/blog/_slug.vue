@@ -102,6 +102,9 @@ export default {
       );
     },
   },
+  mounted() {
+    this.incrementViews();
+  },
 };
 </script>
 <style>
