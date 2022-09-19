@@ -17,6 +17,9 @@ export default {
           ? process.env.BASE_URL || "http://localhost:8888/"
           : "http://localhost:8888/",
     },
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID,
+    },
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -93,6 +96,7 @@ export default {
   modules: [
     "@nuxtjs/axios",
     "nuxt-webfontloader",
+    "@nuxtjs/gtm",
     "@nuxtjs/pwa",
     "@nuxt/content",
   ],
@@ -104,10 +108,14 @@ export default {
       ],
     },
   },
+  gtm: {
+    id: "GTM-XXXXXXX",
+  },
   pwa: {
     manifest: {
       name: "ensah.org",
       short_name: "ensah",
+      description: "pdf classroom for engineering archives",
       icons: [
         {
           src: "/icon-192x192.png",
@@ -124,6 +132,7 @@ export default {
       background_color: "#ffffff",
       lang: "fr",
       display: "standalone",
+      orientation: "portrait",
     },
   },
   content: {},
