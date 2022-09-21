@@ -9,6 +9,9 @@ export default {
           ? process.env.BASE_URL || "http://localhost:8888/"
           : "http://localhost:8888/",
     },
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID,
+    },
   },
   privateRuntimeConfig: {
     axios: {
@@ -16,9 +19,6 @@ export default {
         process.env.NODE_ENV === "production"
           ? process.env.BASE_URL || "http://localhost:8888/"
           : "http://localhost:8888/",
-    },
-    gtm: {
-      id: process.env.GOOGLE_TAG_MANAGER_ID,
     },
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -109,7 +109,7 @@ export default {
     },
   },
   gtm: {
-    id: "GTM-XXXXXXX",
+    pageTracking: true,
   },
   pwa: {
     manifest: {
