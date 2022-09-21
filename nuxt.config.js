@@ -110,6 +110,7 @@ export default {
   },
   gtm: {
     pageTracking: true,
+    scriptDefer: true,
   },
   pwa: {
     manifest: {
