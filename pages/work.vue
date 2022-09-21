@@ -53,13 +53,13 @@
       </svg>
     </h2>
     <section class="grid-3 pt-12 mx-auto">
-      <List title="Where to look" :links="coding">
-        <IconYtb />
+      <List title="Where to look" :links="platforms">
+        <IconLink />
       </List>
-      <List title="Manual entries" :links="coding">
-        <IconYtb />
+      <List title="Manual entries" :links="jobs">
+        <IconOffer />
       </List>
-      <List title="Career Advice" :links="coding">
+      <List title="Career Advice" :links="advice">
         <IconYtb />
       </List>
     </section>
@@ -67,54 +67,82 @@
 </template>
 <script>
 export default {
+  async asyncData({ $content }) {
+    const jobs = await $content("jobs").sortBy("createdAt", "desc").fetch();
+    return {
+      jobs,
+    };
+  },
   data() {
     return {
       tools: [
         {
           icon: "file",
-          href: "https://lushprojects.com/circuitjs/circuitjs.html",
+          href: "https://www.careercup.com/resume",
           name: "Build Resume",
         },
         {
           icon: "signature",
-          href: "https://simulator.io/",
+          href: "https://www.indeed.com/career-advice/resumes-cover-letters/how-to-write-a-cover-letter",
           name: "Cover letter",
         },
         {
           icon: "briefcase",
-          href: "https://matrixcalc.org/fr/",
-          name: "Stage",
+          href: "https://www.9rayti.com/article/conseils-trouver-stage-entreprise",
+          name: "Internships",
         },
         {
-          icon: "share-alt",
-          href: "https://www.periodni.com/fr/",
-          name: "Build in public",
+          icon: "file-powerpoint",
+          href: "https://www.creeruncv.com/exemple-de-cv/gratuit/",
+          name: "Templates",
         },
       ],
-      coding: [
+      platforms: [
         {
-          href: "https://www.youtube.com/c/Freecodecamp",
-          name: "Freecodecamp",
+          href: "https://rekrute.com",
+          name: "Rekrute",
         },
         {
-          href: "https://www.youtube.com/c/TraversyMedia",
-          name: "Traversy Media",
+          href: "https://linkedin.com",
+          name: "Linkedin",
         },
         {
-          href: "https://www.youtube.com/c/Fireship",
-          name: "Fireship io",
+          href: "https://indeed.com",
+          name: "Indeed",
         },
         {
-          href: "https://www.youtube.com/c/gotreehouse",
-          name: "Treehouse",
+          href: "https://remoteok.com",
+          name: "Remote OK",
         },
         {
-          href: "https://www.youtube.com/c/FKnight",
-          name: "Forest Knight",
+          href: "https://remotify.me",
+          name: "Remotify Me",
+        },
+      ],
+      advice: [
+        {
+          href: "https://youtu.be/Kg_JzrzYkfw",
+          name: "3 resume don'ts",
         },
         {
-          href: "https://www.youtube.com/c/WebDevSimplified",
-          name: "Web deb simplified",
+          href: "https://youtu.be/S06zMXpys6I",
+          name: "Développeur·se: entretiens",
+        },
+        {
+          href: "https://youtu.be/7H08TcRX5SE",
+          name: "Working remotely as a developer",
+        },
+        {
+          href: "https://youtu.be/G-j39crM4mc",
+          name: "DayInLife of Civil engineer",
+        },
+        {
+          href: "https://www.youtube.com/watch?v=Wc2keUXLQdE",
+          name: "DayInLife of Software enginner",
+        },
+        {
+          href: "https://www.youtube.com/watch?v=mFHnIMjKjhI",
+          name: "Ingénieur efficacité énergétique",
         },
       ],
     };
