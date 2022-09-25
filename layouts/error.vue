@@ -7,7 +7,7 @@
     </h2>
     <img
       src="/404.svg"
-      alt=""
+      alt="Error graphic"
       class="block w-auto md:w-1/3 my-10"
       loading="lazy"
     />
