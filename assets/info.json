@@ -1,32 +1,38 @@
 [
   {
-    "name": "Algèbre 1",
-    "icon": "square-root-alt",
-    "idx": "Alg1",
+    "name": "Programmation avancée C",
+    "icon": "code",
+    "idx": "Langage_C",
     "semester": "s1"
   },
   {
-    "name": "Analyse 1",
-    "icon": "chart-line",
-    "idx": "Ana1",
+    "name": "Architecture des ordinateurs",
+    "icon": "microchip",
+    "idx": "Architecture",
     "semester": "s1"
   },
   {
-    "name": "Mécanique 1",
-    "icon": "wrench",
-    "idx": "Meca1",
+    "name": "Analyse des données",
+    "icon": "chart-bar",
+    "idx": "Donnees",
     "semester": "s1"
   },
   {
-    "name": "Physique 1",
-    "icon": "car-battery",
-    "idx": "Phy1",
+    "name": "Base des données",
+    "icon": "database",
+    "idx": "Database",
     "semester": "s1"
   },
   {
-    "name": "Informatique 1",
-    "icon": "laptop",
-    "idx": "Info1",
+    "name": "Réseaux Informatiques",
+    "icon": "network-wired",
+    "idx": "Reseau1",
+    "semester": "s1"
+  },
+  {
+    "name": "Langues et Communication",
+    "icon": "language",
+    "idx": "Lang4",
     "semester": "s1"
   },
   {
