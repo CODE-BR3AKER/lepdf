@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Algèbre 3",
+    "icon": "square-root-alt",
+    "idx": "Alg3",
+    "semester": "s3"
+  },
+  {
+    "name": "Analyse 3",
+    "icon": "chart-line",
+    "idx": "Ana3",
+    "semester": "s3"
+  },
+  {
+    "name": "Mécanique 2",
+    "icon": "wrench",
+    "idx": "Meca2",
+    "semester": "s3"
+  },
+  {
+    "name": "Physique 3",
+    "icon": "car-battery",
+    "idx": "Phy3",
+    "semester": "s3"
+  },
+  {
+    "name": "Informatique 2",
+    "icon": "code",
+    "idx": "Info2",
+    "semester": "s3"
+  },
+  {
+    "name": "Langues et Communication",
+    "icon": "language",
+    "idx": "Lang3",
+    "semester": "s3"
+  },
+  {
+    "name": "Maths Appliquées",
+    "icon": "border-all",
+    "idx": "Map",
+    "semester": "s4"
+  },
+  {
+    "name": "Analyse 4",
+    "icon": "wave-square",
+    "idx": "Ana4",
+    "semester": "s4"
+  },
+  {
+    "name": "Physique 4",
+    "icon": "tint",
+    "idx": "Phy4",
+    "semester": "s4"
+  },
+  {
+    "name": "Chimie 2",
+    "icon": "vial",
+    "idx": "Chi2",
+    "semester": "s4"
+  },
+  {
+    "name": "Electronique",
+    "icon": "plug",
+    "idx": "Electro",
+    "semester": "s4"
+  },
+  {
+    "name": "Informatique 3",
+    "icon": "code",
+    "idx": "Info3",
+    "semester": "s4"
+  }
+]

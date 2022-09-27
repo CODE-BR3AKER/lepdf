@@ -30,6 +30,12 @@
     "semester": "s1"
   },
   {
+    "name": "Langues et Communication",
+    "icon": "language",
+    "idx": "Lang1",
+    "semester": "s1"
+  },
+  {
     "name": "Algèbre 2",
     "icon": "square-root-alt",
     "idx": "Alg2",
@@ -57,6 +63,12 @@
     "name": "Géologie",
     "icon": "compass",
     "idx": "Geo",
+    "semester": "s2"
+  },
+  {
+    "name": "Langues et Communication",
+    "icon": "language",
+    "idx": "Lang2",
     "semester": "s2"
   }
 ]

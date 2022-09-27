@@ -7,7 +7,7 @@
   },
   {
     "name": "Architecture des ordinateurs",
-    "icon": "microchip",
+    "icon": "desktop",
     "idx": "Architecture",
     "semester": "s1"
   },
@@ -20,7 +20,7 @@
   {
     "name": "Base des données",
     "icon": "database",
-    "idx": "Database",
+    "idx": "Database1",
     "semester": "s1"
   },
   {
@@ -36,33 +36,183 @@
     "semester": "s1"
   },
   {
-    "name": "Algèbre 2",
-    "icon": "square-root-alt",
-    "idx": "Alg2",
+    "name": "C++ OOP",
+    "icon": "file-code",
+    "idx": "OopCPlus",
     "semester": "s2"
   },
   {
-    "name": "Analyse 2",
-    "icon": "chart-line",
-    "idx": "Ana2",
+    "name": "Algorithmitique Avancée",
+    "icon": "sitemap",
+    "idx": "Algo2",
     "semester": "s2"
   },
   {
-    "name": "Physique 2",
-    "icon": "microscope",
-    "idx": "Phy2",
+    "name": "UML",
+    "icon": "project-diagram",
+    "idx": "Uml",
     "semester": "s2"
   },
   {
-    "name": "Chimie 1",
-    "icon": "vial",
-    "idx": "Chi1",
+    "name": "Recherche Opérationnelle",
+    "icon": "dice-five",
+    "idx": "Ro",
     "semester": "s2"
   },
   {
-    "name": "Géologie",
-    "icon": "compass",
-    "idx": "Geo",
+    "name": "Développement Web",
+    "icon": "internet-explorer",
+    "idx": "Web1",
     "semester": "s2"
+  },
+  {
+    "name": "Économie de l'entreprise",
+    "icon": "file-invoice-dollar",
+    "idx": "Eco",
+    "semester": "s2"
+  },
+  {
+    "name": "Programming JAVA",
+    "icon": "java",
+    "idx": "Java",
+    "semester": "s3"
+  },
+  {
+    "name": "XML et Apps Web avancées",
+    "icon": "js-square",
+    "idx": "Web2",
+    "semester": "s3"
+  },
+  {
+    "name": "Génie Logiciel et IHM",
+    "icon": "credit-card",
+    "idx": "Ihm",
+    "semester": "s3"
+  },
+  {
+    "name": "Apprentissage statistique",
+    "icon": "chart-bar",
+    "idx": "Stat",
+    "semester": "s3"
+  },
+  {
+    "name": "Administration Linux",
+    "icon": "ubuntu",
+    "idx": "linux",
+    "semester": "s3"
+  },
+  {
+    "name": "Gestion de l'entreprise",
+    "icon": "tasks",
+    "idx": "Gestion",
+    "semester": "s3"
+  },
+  {
+    "name": "Administration des réseaux",
+    "icon": "wifi",
+    "idx": "Reseau2",
+    "semester": "s4"
+  },
+  {
+    "name": "Intelligence artificielle",
+    "icon": "brain",
+    "idx": "ai",
+    "semester": "s4"
+  },
+  {
+    "name": "Base des Données Av",
+    "icon": "database",
+    "idx": "Database2",
+    "semester": "s4"
+  },
+  {
+    "name": "Technologies distribuées",
+    "icon": "docker",
+    "idx": "DistributedSystems",
+    "semester": "s4"
+  },
+  {
+    "name": "Gestion de projet PFA",
+    "icon": "black-tie",
+    "idx": "Pfa",
+    "semester": "s4"
+  },
+  {
+    "name": "Communication pro",
+    "icon": "headset",
+    "idx": "Communication",
+    "semester": "s4"
+  },
+  {
+    "name": "Virtiualization et Cloud",
+    "icon": "cloud",
+    "idx": "Cloud",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "Systèmes embarqués",
+    "icon": "microchip",
+    "idx": "EmbededSystems",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "Cryptographie et Sécurité",
+    "icon": "shield-alt",
+    "idx": "Security",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "Applications Mobile",
+    "icon": "android",
+    "idx": "Mobile",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "Qualité Logiciel",
+    "icon": "flag-checkered",
+    "idx": "Q&A",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "RH et Gestion Financière",
+    "icon": "coins",
+    "idx": "Hr",
+    "semester": "s5-gl"
+  },
+  {
+    "name": "CRM et ERP",
+    "icon": "boxes",
+    "idx": "Crm&Erp",
+    "semester": "s5-bi"
+  },
+  {
+    "name": "Systèmes Décisionnels",
+    "icon": "step-forward",
+    "idx": "DSS",
+    "semester": "s5-bi"
+  },
+  {
+    "name": "Data Mining",
+    "icon": "searchengin",
+    "idx": "DataMining",
+    "semester": "s5-bi"
+  },
+  {
+    "name": "Information et Connaissances",
+    "icon": "info",
+    "idx": "InformationGathering",
+    "semester": "s5-bi"
+  },
+  {
+    "name": "Veille Stratégique",
+    "icon": "chess",
+    "idx": "StrategicWatch",
+    "semester": "s5-bi"
+  },
+  {
+    "name": "RH et Gestion Financière",
+    "icon": "coins",
+    "idx": "Hr",
+    "semester": "s5-bi"
   }
 ]
