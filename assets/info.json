@@ -1,217 +1,217 @@
 [
   {
     "name": "Programmation avancée C",
-    "icon": "code",
+    "icon": "fas fa-code",
     "idx": "Langage_C",
     "semester": "s1"
   },
   {
     "name": "Architecture des ordinateurs",
-    "icon": "desktop",
+    "icon": "fas fa-desktop",
     "idx": "Architecture",
     "semester": "s1"
   },
   {
     "name": "Analyse des données",
-    "icon": "chart-bar",
+    "icon": "fas fa-chart-bar",
     "idx": "Donnees",
     "semester": "s1"
   },
   {
     "name": "Base des données",
-    "icon": "database",
+    "icon": "fas fa-database",
     "idx": "Database1",
     "semester": "s1"
   },
   {
     "name": "Réseaux Informatiques",
-    "icon": "network-wired",
+    "icon": "fas fa-network-wired",
     "idx": "Reseau1",
     "semester": "s1"
   },
   {
     "name": "Langues et Communication",
-    "icon": "language",
+    "icon": "fas fa-language",
     "idx": "Lang4",
     "semester": "s1"
   },
   {
     "name": "C++ OOP",
-    "icon": "file-code",
+    "icon": "fas fa-file-code",
     "idx": "OopCPlus",
     "semester": "s2"
   },
   {
     "name": "Algorithmitique Avancée",
-    "icon": "sitemap",
+    "icon": "fas fa-sitemap",
     "idx": "Algo2",
     "semester": "s2"
   },
   {
     "name": "UML",
-    "icon": "project-diagram",
+    "icon": "fas fa-project-diagram",
     "idx": "Uml",
     "semester": "s2"
   },
   {
     "name": "Recherche Opérationnelle",
-    "icon": "dice-five",
+    "icon": "fas fa-dice-five",
     "idx": "Ro",
     "semester": "s2"
   },
   {
     "name": "Développement Web",
-    "icon": "internet-explorer",
+    "icon": "fab fa-internet-explorer",
     "idx": "Web1",
     "semester": "s2"
   },
   {
     "name": "Économie de l'entreprise",
-    "icon": "file-invoice-dollar",
+    "icon": "fas fa-file-invoice-dollar",
     "idx": "Eco",
     "semester": "s2"
   },
   {
     "name": "Programming JAVA",
-    "icon": "java",
+    "icon": "fab fa-java",
     "idx": "Java",
     "semester": "s3"
   },
   {
     "name": "XML et Apps Web avancées",
-    "icon": "js-square",
+    "icon": "fab fa-js-square",
     "idx": "Web2",
     "semester": "s3"
   },
   {
     "name": "Génie Logiciel et IHM",
-    "icon": "credit-card",
+    "icon": "fas fa-credit-card",
     "idx": "Ihm",
     "semester": "s3"
   },
   {
     "name": "Apprentissage statistique",
-    "icon": "chart-bar",
+    "icon": "fas fa-chart-bar",
     "idx": "Stat",
     "semester": "s3"
   },
   {
     "name": "Administration Linux",
-    "icon": "ubuntu",
+    "icon": "fab fa-ubuntu",
     "idx": "linux",
     "semester": "s3"
   },
   {
     "name": "Gestion de l'entreprise",
-    "icon": "tasks",
+    "icon": "fas fa-tasks",
     "idx": "Gestion",
     "semester": "s3"
   },
   {
     "name": "Administration des réseaux",
-    "icon": "wifi",
+    "icon": "fas fa-wifi",
     "idx": "Reseau2",
     "semester": "s4"
   },
   {
     "name": "Intelligence artificielle",
-    "icon": "brain",
+    "icon": "fas fa-brain",
     "idx": "ai",
     "semester": "s4"
   },
   {
     "name": "Base des Données Av",
-    "icon": "database",
+    "icon": "fas fa-database",
     "idx": "Database2",
     "semester": "s4"
   },
   {
     "name": "Technologies distribuées",
-    "icon": "docker",
+    "icon": "fab fa-docker",
     "idx": "DistributedSystems",
     "semester": "s4"
   },
   {
     "name": "Gestion de projet PFA",
-    "icon": "black-tie",
+    "icon": "fab fa-black-tie",
     "idx": "Pfa",
     "semester": "s4"
   },
   {
     "name": "Communication pro",
-    "icon": "headset",
+    "icon": "fas fa-headset",
     "idx": "Communication",
     "semester": "s4"
   },
   {
     "name": "Virtiualization et Cloud",
-    "icon": "cloud",
+    "icon": "fas fa-cloud",
     "idx": "Cloud",
     "semester": "s5-gl"
   },
   {
     "name": "Systèmes embarqués",
-    "icon": "microchip",
+    "icon": "fas fa-microchip",
     "idx": "EmbededSystems",
     "semester": "s5-gl"
   },
   {
     "name": "Cryptographie et Sécurité",
-    "icon": "shield-alt",
+    "icon": "fas fa-shield-alt",
     "idx": "Security",
     "semester": "s5-gl"
   },
   {
     "name": "Applications Mobile",
-    "icon": "android",
+    "icon": "fab fa-android",
     "idx": "Mobile",
     "semester": "s5-gl"
   },
   {
     "name": "Qualité Logiciel",
-    "icon": "flag-checkered",
+    "icon": "fas fa-flag-checkered",
     "idx": "Q&A",
     "semester": "s5-gl"
   },
   {
     "name": "RH et Gestion Financière",
-    "icon": "coins",
+    "icon": "fas fa-coins",
     "idx": "Hr",
     "semester": "s5-gl"
   },
   {
     "name": "CRM et ERP",
-    "icon": "boxes",
+    "icon": "fas fa-boxes",
     "idx": "Crm&Erp",
     "semester": "s5-bi"
   },
   {
     "name": "Systèmes Décisionnels",
-    "icon": "step-forward",
+    "icon": "fas fa-step-forward",
     "idx": "DSS",
     "semester": "s5-bi"
   },
   {
     "name": "Data Mining",
-    "icon": "searchengin",
+    "icon": "fab fa-searchengin",
     "idx": "DataMining",
     "semester": "s5-bi"
   },
   {
     "name": "Information et Connaissances",
-    "icon": "info",
+    "icon": "fas fa-info",
     "idx": "InformationGathering",
     "semester": "s5-bi"
   },
   {
     "name": "Veille Stratégique",
-    "icon": "chess",
+    "icon": "fas fa-chess",
     "idx": "StrategicWatch",
     "semester": "s5-bi"
   },
   {
     "name": "RH et Gestion Financière",
-    "icon": "coins",
+    "icon": "fas fa-coins",
     "idx": "Hr",
     "semester": "s5-bi"
   }

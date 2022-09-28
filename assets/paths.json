@@ -1,42 +1,42 @@
 [
   {
     "name": "cycle préparatoire 1",
-    "icon": "pencil-ruler",
+    "icon": "fas fa-pencil-ruler",
     "idx": "ap1"
   },
   {
     "name": "cycle préparatoire 2",
-    "icon": "pencil-ruler",
+    "icon": "fas fa-pencil-ruler",
     "idx": "ap2"
   },
   {
     "name": "génie informatique",
-    "icon": "terminal",
+    "icon": "fas fa-terminal",
     "idx": "info"
   },
   {
     "name": "génie civil",
-    "icon": "hard-hat",
+    "icon": "fas fa-hard-hat",
     "idx": "civil"
   },
   {
     "name": "génie data",
-    "icon": "chart-bar",
+    "icon": "fas fa-chart-bar",
     "idx": "id"
   },
   {
     "name": "génie mécanique",
-    "icon": "cog",
+    "icon": "fas fa-cog",
     "idx": "meca"
   },
   {
     "name": "génie energétique",
-    "icon": "radiation",
+    "icon": "fas fa-radiation",
     "idx": "energy"
   },
   {
     "name": "génie eau & env",
-    "icon": "tint",
+    "icon": "fas fa-tint",
     "idx": "env"
   }
 ]

@@ -1,73 +1,73 @@
 [
   {
     "name": "Algèbre 1",
-    "icon": "square-root-alt",
+    "icon": "fas fa-square-root-alt",
     "idx": "Alg1",
     "semester": "s1"
   },
   {
     "name": "Analyse 1",
-    "icon": "chart-line",
+    "icon": "fas fa-chart-line",
     "idx": "Ana1",
     "semester": "s1"
   },
   {
     "name": "Mécanique 1",
-    "icon": "wrench",
+    "icon": "fas fa-wrench",
     "idx": "Meca1",
     "semester": "s1"
   },
   {
     "name": "Physique 1",
-    "icon": "car-battery",
+    "icon": "fas fa-car-battery",
     "idx": "Phy1",
     "semester": "s1"
   },
   {
     "name": "Informatique 1",
-    "icon": "laptop",
+    "icon": "fas fa-laptop",
     "idx": "Info1",
     "semester": "s1"
   },
   {
     "name": "Langues et Communication",
-    "icon": "language",
+    "icon": "fas fa-language",
     "idx": "Lang1",
     "semester": "s1"
   },
   {
     "name": "Algèbre 2",
-    "icon": "square-root-alt",
+    "icon": "fas fa-square-root-alt",
     "idx": "Alg2",
     "semester": "s2"
   },
   {
     "name": "Analyse 2",
-    "icon": "chart-line",
+    "icon": "fas fa-chart-line",
     "idx": "Ana2",
     "semester": "s2"
   },
   {
     "name": "Physique 2",
-    "icon": "microscope",
+    "icon": "fas fa-microscope",
     "idx": "Phy2",
     "semester": "s2"
   },
   {
     "name": "Chimie 1",
-    "icon": "vial",
+    "icon": "fas fa-vial",
     "idx": "Chi1",
     "semester": "s2"
   },
   {
     "name": "Géologie",
-    "icon": "compass",
+    "icon": "fas fa-compass",
     "idx": "Geo",
     "semester": "s2"
   },
   {
     "name": "Langues et Communication",
-    "icon": "language",
+    "icon": "fas fa-language",
     "idx": "Lang2",
     "semester": "s2"
   }

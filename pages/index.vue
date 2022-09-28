@@ -133,10 +133,22 @@
       </svg>
     </h2>
     <section class="mb-12 flex mx-auto justify-center flex-wrap items-center">
-      <Card name="Outils scientifiques" icon="calculator" link="res/tools" />
-      <Card name="Formations en ligne" icon="graduation-cap" link="res/study" />
-      <Card name="Resources Videos" icon="youtube" link="res/videos" />
-      <Card name="Groupes et Pages" icon="facebook-square" link="res/grps" />
+      <Card
+        name="Outils scientifiques"
+        icon="fas fa-calculator"
+        link="res/tools"
+      />
+      <Card
+        name="Formations en ligne"
+        icon="fas fa-graduation-cap"
+        link="res/study"
+      />
+      <Card name="Resources Videos" icon="fab fa-youtube" link="res/videos" />
+      <Card
+        name="Groupes et Pages"
+        icon="fab fa-facebook-square"
+        link="res/grps"
+      />
     </section>
   </main>
 </template>

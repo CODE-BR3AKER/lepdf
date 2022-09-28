@@ -1,73 +1,73 @@
 [
   {
     "name": "Algèbre 3",
-    "icon": "square-root-alt",
+    "icon": "fas fa-square-root-alt",
     "idx": "Alg3",
     "semester": "s3"
   },
   {
     "name": "Analyse 3",
-    "icon": "chart-line",
+    "icon": "fas fa-chart-line",
     "idx": "Ana3",
     "semester": "s3"
   },
   {
     "name": "Mécanique 2",
-    "icon": "wrench",
+    "icon": "fas fa-wrench",
     "idx": "Meca2",
     "semester": "s3"
   },
   {
     "name": "Physique 3",
-    "icon": "car-battery",
+    "icon": "fas fa-car-battery",
     "idx": "Phy3",
     "semester": "s3"
   },
   {
     "name": "Informatique 2",
-    "icon": "code",
+    "icon": "fas fa-code",
     "idx": "Info2",
     "semester": "s3"
   },
   {
     "name": "Langues et Communication",
-    "icon": "language",
+    "icon": "fas fa-language",
     "idx": "Lang3",
     "semester": "s3"
   },
   {
     "name": "Maths Appliquées",
-    "icon": "border-all",
+    "icon": "fas fa-border-all",
     "idx": "Map",
     "semester": "s4"
   },
   {
     "name": "Analyse 4",
-    "icon": "wave-square",
+    "icon": "fas fa-wave-square",
     "idx": "Ana4",
     "semester": "s4"
   },
   {
     "name": "Physique 4",
-    "icon": "tint",
+    "icon": "fas fa-tint",
     "idx": "Phy4",
     "semester": "s4"
   },
   {
     "name": "Chimie 2",
-    "icon": "vial",
+    "icon": "fas fa-vial",
     "idx": "Chi2",
     "semester": "s4"
   },
   {
     "name": "Electronique",
-    "icon": "plug",
+    "icon": "fas fa-plug",
     "idx": "Electro",
     "semester": "s4"
   },
   {
     "name": "Informatique 3",
-    "icon": "code",
+    "icon": "fas fa-code",
     "idx": "Info3",
     "semester": "s4"
   }
