@@ -22,27 +22,27 @@ export default {
     return {
       tools: [
         {
-          icon: "plug",
+          icon: "fas fa-plug",
           href: "https://lushprojects.com/circuitjs/circuitjs.html",
           name: "Circuits Simulator",
         },
         {
-          icon: "microchip",
+          icon: "fas fa-microchip",
           href: "https://simulator.io/",
           name: "Logic Circuits",
         },
         {
-          icon: "border-none",
+          icon: "fas fa-border-none",
           href: "https://matrixcalc.org/fr/",
           name: "Matrix Calculator",
         },
         {
-          icon: "infinity",
+          icon: "fas fa-infinity",
           href: "https://www.integral-calculator.com/",
           name: "Integral Calculator",
         },
         {
-          icon: "atom",
+          icon: "fas fa-atom",
           href: "https://www.periodni.com/fr/",
           name: "Table Periodique",
         },

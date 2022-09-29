@@ -136,7 +136,7 @@ export default {
   margin-bottom: 2rem;
 }
 .content-blog img {
-  @apply block my-4;
+  @apply block my-4 mx-auto;
 }
 .icon.icon-link {
   background-image: var(--url);
@@ -159,6 +159,6 @@ export default {
   @apply my-2;
 }
 .content-blog a {
-  @apply underline;
+  @apply underline text-main;
 }
 </style>
