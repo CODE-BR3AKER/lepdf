@@ -46,6 +46,11 @@ export default {
           href: "https://www.periodni.com/fr/",
           name: "Table Periodique",
         },
+        {
+          icon: "fab fa-fedora",
+          href: "https://bellard.org/jslinux/",
+          name: "Linux on the Web",
+        },
       ],
     };
   },

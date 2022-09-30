@@ -90,7 +90,7 @@
         <h3 class="font-medium text-3xl mt-8 lg:mt-0 text-title">
           L'idée de site
         </h3>
-        <p class="text-lg max-w-xl mb-4 lg:mb-0">
+        <p class="text-base max-w-xl mb-4 lg:mb-0">
           Initiative d’un ensahist, pour documenter les resources souvent
           partagés dans les groupes whatsapp et les drives pour une mellieur
           accéssibilité. Le contenu maintenant est gérer par l’association des

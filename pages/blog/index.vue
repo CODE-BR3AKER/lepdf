@@ -25,7 +25,7 @@
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
         :author="post.author"
-        :description="post.description"
+        :description="post.description.substring(0, 134) + `...`"
         loading="lazy"
       />
     </section>

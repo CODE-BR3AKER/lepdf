@@ -159,6 +159,6 @@ export default {
   @apply my-2;
 }
 .content-blog a {
-  @apply underline text-main;
+  @apply underline text-links;
 }
 </style>
