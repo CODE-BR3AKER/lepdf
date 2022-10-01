@@ -18,7 +18,8 @@
     "core-js": "^3.6.5",
     "faunadb": "^4.6.0",
     "nuxt": "^2.14.6",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt-webfontloader": "^1.1.0",
+    "remark-emoji": "^2.2.0"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.1.1",

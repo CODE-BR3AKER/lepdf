@@ -136,7 +136,7 @@ export default {
       orientation: "portrait",
     },
   },
-  content: {},
+  content: { markdown: { remarkPlugins: ["remark-emoji"] } },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

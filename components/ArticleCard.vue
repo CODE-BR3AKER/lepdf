@@ -2,7 +2,7 @@
   <div class="w-full p-5">
     <div class="h-full overflow-hidden">
       <nuxt-link :to="link" class="flex md:flex-row flex-col appearance-none">
-        <div class="overflow-hidden rounded-lg md:w-1/2 w-full mr-10">
+        <div class="overflow-hidden rounded-lg md:w-1/3 w-full mr-10">
           <img
             :src="img"
             :alt="title"
@@ -10,7 +10,7 @@
             loading="lazy"
           />
         </div>
-        <div>
+        <div class="w-2/3">
           <p class="text-light text-text mt-4">
             <span class="rounded bg-main text-white font-medium mr-2 px-2 py-1">
               Tips
@@ -23,7 +23,7 @@
           >
             {{ title }} &#8594;
           </p>
-          <p class="text-text">
+          <p class="text-text max-w-full break-all">
             {{ description }}
           </p>
         </div>

@@ -6,7 +6,7 @@
       Resources Videos
     </h1>
     <section class="grid-3 pt-16 mx-auto justify-between">
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center">
         <List title="Coding Channels" :links="coding">
           <IconYtb />
         </List>
@@ -20,7 +20,7 @@
           <IconYtb />
         </List>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center">
         <List title="Général" :links="general">
           <IconYtb />
         </List>
@@ -28,7 +28,7 @@
           <IconYtb />
         </List>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center">
         <List title="Records des séances" :links="records">
           <IconGdrive />
         </List>

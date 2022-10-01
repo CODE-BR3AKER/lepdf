@@ -6,7 +6,7 @@
       Groupes &amp; Pages
     </h1>
     <section class="grid-3 pt-16 justify-between">
-      <div>
+      <div class="flex flex-col items-center">
         <List title="Coding Channels" :links="coding">
           <IconFb />
         </List>
@@ -20,7 +20,7 @@
           <IconFb />
         </List>
       </div>
-      <div>
+      <div class="flex flex-col items-center">
         <List title="Général" :links="general">
           <IconYtb />
         </List>
@@ -28,7 +28,7 @@
           <IconInsta />
         </List>
       </div>
-      <div>
+      <div class="flex flex-col items-center">
         <List title="Records des séances" :links="records">
           <IconFb />
         </List>
