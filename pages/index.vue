@@ -35,7 +35,7 @@
         :author="post.author"
       />
     </section>
-    <h2 class="mt-12" id="paths">
+    <h2 class="mt-12 md:flex hidden" id="paths">
       Filieres
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,9 @@
         ></path>
       </svg>
     </h2>
-    <section class="my-12 flex mx-auto justify-center items-center flex-wrap">
+    <section
+      class="hidden my-12 md:flex mx-auto justify-center items-center flex-wrap"
+    >
       <Card
         v-for="(sub, id) in subjects"
         :key="id"
@@ -194,5 +196,11 @@ main {
 }
 h2 {
   @apply flex justify-center items-center text-title font-medium;
+}
+#paths {
+  display: flex !important;
+  @media only screen and (max-width: 768px) {
+    display: none !important;
+  }
 }
 </style>

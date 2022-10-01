@@ -1,5 +1,7 @@
 <template>
-  <header class="body-font mb-12 lg:mt-8 mt-3 text-lg font-light">
+  <header
+    class="body-font mb-12 lg:mt-8 mt-3 text-lg font-light shadow-lg md:shadow-none"
+  >
     <div
       class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >
@@ -73,11 +75,10 @@
     <div class="block md:hidden">
       <nav
         v-if="isOpen"
-        class="mx-2 flex flex-col items-center text-center md:hidden mt-8 rounded-md bg-card shadow-lg h-56 pt-4"
+        class="mx-2 flex flex-col items-center text-center md:hidden mt-8 rounded-md bg-card shadow-lg h-48 pt-4"
       >
         <nuxt-link class="mobile-link" to="/">Accueil</nuxt-link>
         <nuxt-link class="mobile-link" to="/#about">À propos</nuxt-link>
-        <nuxt-link class="mobile-link" to="/paths">Resources</nuxt-link>
         <nuxt-link class="mobile-link" to="/blog">Blog</nuxt-link>
         <nuxt-link class="mobile-link" to="/work">Travail</nuxt-link>
       </nav>

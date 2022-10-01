@@ -2,6 +2,7 @@
   <div class="relative overflow-hidden">
     <span class="bg-circle bg-circle-main hidden md:inline-flex"></span>
     <span class="bg-circle bg-circle-secondary hidden md:inline-flex"></span>
+    <Tabs class="block md:hidden fixed bottom-0" />
     <Header>
       <template v-slot:switch>
         <SwitchColor />
