@@ -12,7 +12,7 @@
       </template>
     </Header>
     <Nuxt />
-    <Footer />
+    <Footer class="hidden md:block" />
   </div>
 </template>
 

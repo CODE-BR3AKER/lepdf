@@ -10,7 +10,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500"
+            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
             width="6"
             height="5"
             viewBox="0 0 6 5"
@@ -32,7 +32,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-main"
+            class="w-5 h-5 text-main mb-1"
             width="26"
             height="30"
             viewBox="0 0 26 30"
@@ -43,7 +43,7 @@
               d="M25.504 7.1363L13.504 0.136296C13.351 0.0470353 13.1771 0 13 0C12.8229 0 12.649 0.0470353 12.496 0.136296L0.496 7.1363C0.345022 7.2244 0.219776 7.35053 0.132747 7.50213C0.0457184 7.65373 -5.17539e-05 7.82549 4.39156e-08 8.0003V22.0003C-5.17539e-05 22.1751 0.0457184 22.3469 0.132747 22.4985C0.219776 22.6501 0.345022 22.7762 0.496 22.8643L12.496 29.8643C12.649 29.9536 12.8229 30.0006 13 30.0006C13.1771 30.0006 13.351 29.9536 13.504 29.8643L25.504 22.8643C25.655 22.7762 25.7802 22.6501 25.8673 22.4985C25.9543 22.3469 26.0001 22.1751 26 22.0003V8.0003C26.0001 7.82549 25.9543 7.65373 25.8673 7.50213C25.7802 7.35053 25.655 7.2244 25.504 7.1363V7.1363ZM13 2.1583L23.016 8.0003L13 13.8423L2.984 8.0003L13 2.1583ZM2 9.7403L12 15.5733V27.2603L2 21.4263V9.7403ZM14 27.2603V15.5743L24 9.7413V21.4263L14 27.2603Z"
               fill="currentColor"
             /></svg
-          >Resources
+          >Fichiers
         </nuxt-link>
       </li>
       <li class="mr-2">
@@ -53,7 +53,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500"
+            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
             width="6"
             height="5"
             viewBox="0 0 6 5"
@@ -74,7 +74,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500"
+            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
             width="7"
             height="7"
             viewBox="0 0 7 7"
