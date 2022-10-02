@@ -1,11 +1,13 @@
 <template>
   <main>
     <h1
-      class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
+      class="hidden md:block text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
       Filières
     </h1>
-    <section class="pt-16 flex mx-auto justify-center items-center flex-wrap">
+    <section
+      class="pt-2 md:pt-16 flex mx-auto justify-center items-center flex-wrap"
+    >
       <Card
         v-for="(sub, id) in subjects"
         :key="id"

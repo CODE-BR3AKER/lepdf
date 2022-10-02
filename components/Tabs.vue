@@ -1,16 +1,16 @@
 <template>
-  <div class="border-t border-gray-200 bg-background z-40 w-full">
+  <div class="bg-background z-40 w-full">
     <ul
       class="flex justify-around text-sm font-medium text-center text-gray-500"
     >
       <li class="mr-2">
         <nuxt-link
           to="/"
-          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 group"
+          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent group"
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
+            class="w-5 h-5 mb-1"
             width="6"
             height="5"
             viewBox="0 0 6 5"
@@ -27,12 +27,12 @@
       <li class="mr-2">
         <nuxt-link
           to="/paths"
-          class="inline-flex flex-col items-center p-4 text-main rounded-t-lg border-b-2 border-main active group"
+          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent active group"
           aria-current="page"
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-main mb-1"
+            class="w-5 h-5 mb-1"
             width="26"
             height="30"
             viewBox="0 0 26 30"
@@ -49,11 +49,11 @@
       <li class="mr-2">
         <nuxt-link
           to="/search"
-          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 group"
+          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent group"
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
+            class="w-5 h-5 mb-1"
             width="6"
             height="5"
             viewBox="0 0 6 5"
@@ -70,11 +70,11 @@
       <li class="mr-2">
         <a
           href="#"
-          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 group"
+          class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent group"
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-gray-400 group-hover:text-gray-500 mb-1"
+            class="w-5 h-5 mb-1"
             width="7"
             height="7"
             viewBox="0 0 7 7"
@@ -112,3 +112,12 @@
     </ul>
   </div>
 </template>
+<style scoped>
+a:hover {
+  color: var(--links);
+}
+.nuxt-link-exact-active:not(#logo) {
+  color: var(--main) !important;
+  border-bottom: 2px var(--main) solid;
+}
+</style>

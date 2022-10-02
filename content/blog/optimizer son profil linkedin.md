@@ -2,18 +2,40 @@
 title: Optimizer son profil linkedin
 updatedAt: "2022-08-25T09:04:06.3287Z"
 thumb: "/blog/linkedin.jpg"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex tortor, viverra vitae ultricies non, placerat et odio. Sed semper iaculis sodales."
+description: "Avec plus de 600 millions de profils professionnels, Linkedin offre un réseau presque illimité de connexions et d'opportunités d'emploi."
 author: Zarkti
 ---
 
-## 1.First paragraph
+Avec plus de 600 millions de profils professionnels, Linkedin offre un réseau presque illimité de connexions et d'opportunités d'emploi.
 
-Proin sollicitudin neque et ligula bibendum, quis ornare lorem consectetur. Praesent porta velit quam, eget ornare sapien ornare vitae. Mauris dolor neque, congue id eleifend id, consectetur non nibh. Nunc mollis, sem quis varius sodales, lectus ipsum venenatis augue, sit amet lobortis purus quam sed tellus. Maecenas posuere felis massa, in egestas urna semper et. Praesent ornare consectetur neque eu condimentum. Aliquam id nunc euismod tortor dictum fermentum eget sit amet risus.
+D'allieurs un profil LinkedIn bien rédigé vous donnera de la crédibilité et vous établira comme un employé potentiel digne de confiance.
 
-## 2.Second one
+## 1. Profile & background & name
 
-Hello there
+- Pic: pro, smile.
+- Pro tip: customize your header, it makes it more personable.
+- Name | Job title
 
-## 3.Third one
+## 2. OpentoWork & Interests
 
-> Hello there - Zakaria
+- Open to work: recruiters only + interests + location, remote - available immediately.
+
+## 3. About section & Featured
+
+who you are ? Sum your experience & career vision.
+
+## 4. Work history & volunteer experience
+
+- Paragraph of what you did
+- Bullets points to highlight what you did
+
+## 5. Education
+
+- Education & licenses & certifications (linkedin learn with email institionel)
+
+## 6. Skills & Endorsements & Accomplishements
+
+## 7. Conclusion
+
+- More on work page
+- Reference: https:www.linkedin.com%2Fin%2Fwonsulting-wendy%2F&v=e8OdtFm2e04

@@ -2,7 +2,7 @@
   <div class="relative overflow-hidden">
     <span class="bg-circle bg-circle-main hidden md:inline-flex"></span>
     <span class="bg-circle bg-circle-secondary hidden md:inline-flex"></span>
-    <Tabs class="block md:hidden fixed bottom-0" />
+    <Tabs class="block md:hidden fixed bottom-0 tabs-shadow" />
     <Header>
       <template v-slot:switch>
         <SwitchColor />
@@ -76,5 +76,10 @@ body {
 .bg-circle-secondary {
   right: -20% !important;
   top: 30rem !important;
+}
+.tabs-shadow {
+  box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1);
+  -webkit-box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1);
+  -moz-box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1);
 }
 </style>
