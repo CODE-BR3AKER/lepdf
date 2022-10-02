@@ -12,7 +12,7 @@
           <th class="hidden md:table-cell">Année</th>
           <th>Action</th>
         </tr>
-        <tr v-for="(file, id) in path" :key="id">
+        <tr v-for="(file, id) in files" :key="id">
           <td class="w-2/3 md:w-2/4">&#128196; {{ file.Filename }}</td>
           <td class="hidden md:table-cell w-1/4 text-center">2018</td>
           <td class="w-1/3 md:w-1/4 text-center">
@@ -29,8 +29,13 @@
   </main>
 </template>
 <script>
-import pathsData from "~/assets/paths/ap1.json";
 export default {
+  async asyncData({ $content, params }) {
+    const path = await $content("paths", params.slug).fetch();
+    return {
+      path,
+    };
+  },
   head() {
     return {
       title: "AP1",
@@ -39,10 +44,14 @@ export default {
   data() {
     return {
       module: this.$route.params.id,
-      path: pathsData.filter((res) => {
-        return res.Module == this.$route.params.id;
-      }),
     };
+  },
+  computed: {
+    files() {
+      return this.path[0].body.filter((res) => {
+        return res.Module == this.$route.params.id;
+      });
+    },
   },
 };
 </script>

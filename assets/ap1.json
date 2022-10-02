@@ -30,7 +30,7 @@
     "semester": "s1"
   },
   {
-    "name": "Langues et Communication",
+    "name": "Langues",
     "icon": "fas fa-language",
     "idx": "Lang1",
     "semester": "s1"
@@ -66,7 +66,7 @@
     "semester": "s2"
   },
   {
-    "name": "Langues et Communication",
+    "name": "Langues",
     "icon": "fas fa-language",
     "idx": "Lang2",
     "semester": "s2"

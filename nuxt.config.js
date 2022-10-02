@@ -36,6 +36,7 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "drive.google.com" },
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
