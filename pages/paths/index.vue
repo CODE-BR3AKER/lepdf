@@ -6,7 +6,7 @@
       Filières
     </h1>
     <section
-      class="pt-2 md:pt-16 flex mx-auto justify-center items-center flex-wrap"
+      class="pt-2 md:pt-16 flex mx-auto justify-center items-center flex-wrap mb-12"
     >
       <Card
         v-for="(sub, id) in subjects"

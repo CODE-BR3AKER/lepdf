@@ -11,7 +11,7 @@
         <SwitchColor />
       </template>
     </Header>
-    <Nuxt />
+    <Nuxt class="md:pb-0 pb-24" />
     <Footer class="hidden md:block" />
   </div>
 </template>
