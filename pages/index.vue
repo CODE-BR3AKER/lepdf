@@ -22,7 +22,7 @@
     </h2>
 
     <section
-      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-6 sm:px-8 md:px-0"
+      class="flex justify-center md:flex-row flex-col items-center my-12 mx-auto max-w-5xl px-2 sm:px-8 md:px-0"
     >
       <!-- post.slug-->
       <Article

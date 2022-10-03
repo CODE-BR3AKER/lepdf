@@ -1,5 +1,7 @@
 <template>
-  <header class="body-font mb-12 lg:mt-8 mt-3 text-lg font-light">
+  <header
+    class="body-font mb-12 lg:mt-8 mt-3 text-lg font-light shadow-sm md:shadow-none"
+  >
     <div
       class="container mx-auto flex px-8 lg:px-12 flex-wrap flex-row items-center justify-between"
     >

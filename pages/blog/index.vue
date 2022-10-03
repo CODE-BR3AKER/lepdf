@@ -6,7 +6,7 @@
       Blog
     </h1>
     <section
-      class="flex justify-between flex-col my-12 mx-auto max-w-4xl px-6 sm:px-8 md:px-0"
+      class="flex justify-between flex-col my-12 mx-auto max-w-4xl px-2 sm:px-8 md:px-0"
     >
       <nav
         class="flex justify-between items-center text-xl m-5 pb-2 border-b text-text"
