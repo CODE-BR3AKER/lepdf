@@ -12,6 +12,7 @@ module.exports = {
         text: "var(--text)",
         title: "var(--title)",
         secondary: "var(--secondary)",
+        search: "var(--search)",
       },
     },
   },

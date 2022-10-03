@@ -26,7 +26,7 @@ export default {
 </script>
 <style scoped>
 table {
-  width: 60vw;
+  width: 75vw;
 }
 th {
   background: var(--main);

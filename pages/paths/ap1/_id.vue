@@ -11,12 +11,9 @@
   </main>
 </template>
 <script>
-import { Year } from "faunadb";
 export default {
   async asyncData({ $content, params }) {
-    const path = await $content("paths", params.slug)
-      .sortBy(Year, "asc")
-      .fetch();
+    const path = await $content("paths", params.slug).fetch();
     return {
       path,
     };

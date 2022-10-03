@@ -38,6 +38,7 @@
   --text: #454545;
   --title: #000000;
   --secondary: #f0f0f0;
+  --search: #f6f6f6;
   --url: url("~assets/icons/hashtag-light.svg");
 }
 .dark {
@@ -46,6 +47,7 @@
   --text: #d7d7d7;
   --title: #ffffff;
   --secondary: #003543;
+  --search: #003543;
   --url: url("~assets/icons/hashtag-dark.svg");
 }
 

@@ -23,7 +23,7 @@
           >
             {{ title }} &#8594;
           </p>
-          <p class="text-text max-w-full break-all">
+          <p class="text-text max-w-full break-all font-light">
             {{ description }}
           </p>
         </div>
