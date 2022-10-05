@@ -22,15 +22,11 @@ Moi personnelement je recommende commencer avec TinkerCAD car c gratuit et march
 
 Au début il faut commencer par juste dessiner des modèles 3d, pour se familiariser avec les bases et les dimensions. Après cela, je recommande les projets suivants:
 
-- Projets énergétiques:
-  - Modalisation d'une éolienne: [Modèle de base](https://grabcad.com/library/wind-turbine-208)
-  - Un suiveur solaire (Solar Tracker): [Modèle de base](https://grabcad.com/library/multi-axis-solar-tracker-1)
-- Projets eau et environnement:
-  - Sytème d'irrigation goutte à goutte: [Modèle de base](https://grabcad.com/library/irrigation-system-by-drip-cbtis-122-sw-step-1)
-- Porjets civiles:
-  - 3d Floorplan de votre résidence: [Modèle de base](https://grabcad.com/library/apartment-flat-floorplan-3d-3)
-- Autres:
-  - Une arme robotique: [Modèle de base](https://grabcad.com/library/4-dof-robotic-arm-4)
+- (GEER) Modalisation d'une éolienne: [Modèle de base](https://grabcad.com/library/wind-turbine-208)
+- (GEER) Un suiveur solaire (Solar Tracker): [Modèle de base](https://grabcad.com/library/multi-axis-solar-tracker-1)
+- (G2E) Sytème d'irrigation goutte à goutte: [Modèle de base](https://grabcad.com/library/irrigation-system-by-drip-cbtis-122-sw-step-1)
+- (Civil) 3d Floorplan de votre résidence: [Modèle de base](https://grabcad.com/library/apartment-flat-floorplan-3d-3)
+- (Mécanique) Une arme robotique: [Modèle de base](https://grabcad.com/library/4-dof-robotic-arm-4)
 
 ## 3- Impression de modèle: 3D printing vs Laser Cutting
 

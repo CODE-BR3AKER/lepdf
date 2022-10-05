@@ -40,12 +40,18 @@
         <nuxt-link class="mr-4" to="/paths">Resources</nuxt-link>
         <nuxt-link to="/blog" class="mr-4">Blog</nuxt-link>
         <nuxt-link to="/work" class="mr-4">Travail</nuxt-link>
-        <nuxt-link to="/search">
+        <nuxt-link to="/search" class="mr-4">
           <IconSearch />
         </nuxt-link>
+        <a href="#">
+          <IconBell />
+        </a>
         <slot name="switch"> </slot>
       </nav>
       <div class="md:hidden text-title flex items-center">
+        <a href="#">
+          <IconBell />
+        </a>
         <slot name="switchMobile"> </slot>
         <i class="fas fa-bars cursor-pointer text-2xl" @click="toggle"></i>
       </div>

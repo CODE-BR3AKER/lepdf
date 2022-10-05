@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-background z-40 w-full">
+  <div class="bg-background z-10 w-full">
     <ul
       class="flex justify-around text-sm font-medium text-center text-gray-500"
     >

@@ -49,8 +49,10 @@ tr:nth-child(even) {
   th {
     display: none;
   }
-  tr:not(:last-child, :first-child) {
+  tr {
     background: transparent !important;
+  }
+  tr:not(:last-child, :first-child) {
     border-bottom: 1px solid var(--secondary);
   }
   td {
