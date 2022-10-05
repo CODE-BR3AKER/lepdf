@@ -22,7 +22,7 @@ export default {
     return {
       tools: [
         {
-          icon: "fas fa-plug",
+          icon: "fas fa-lightbulb",
           href: "https://lushprojects.com/circuitjs/circuitjs.html",
           name: "Circuits Simulator",
         },
@@ -50,6 +50,16 @@ export default {
           icon: "fab fa-fedora",
           href: "https://bellard.org/jslinux/",
           name: "Linux on the Web",
+        },
+        {
+          icon: "fas fa-thermometer-empty",
+          href: "https://www.unitconverters.net/",
+          name: "Units Converter",
+        },
+        {
+          icon: "fas fa-leaf",
+          href: "https://www.overleaf.com/",
+          name: "Latex Editor",
         },
       ],
     };

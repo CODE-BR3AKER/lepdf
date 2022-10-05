@@ -7,6 +7,7 @@
         <nuxt-link
           to="/"
           class="inline-flex flex-col items-center p-4 rounded-t-lg border-b-2 border-transparent group"
+          exact
         >
           <svg
             aria-hidden="true"
@@ -97,7 +98,7 @@
 a:hover {
   color: var(--links);
 }
-.nuxt-link-exact-active:not(#logo) {
+.nuxt-link-active:not(#logo) {
   color: var(--main) !important;
   border-bottom: 2px var(--main) solid;
 }

@@ -52,7 +52,10 @@
           </li>
         </ul>
       </nav>
-      <nuxt-content class="content-blog text-text" :document="post" />
+      <nuxt-content
+        class="content-blog text-text md:text-base text-sm"
+        :document="post"
+      />
       <LikeBtn />
       <p class="mt-8 text-text">
         Voulez-vous contribuer au blog ? Envoyer vos idées sur
