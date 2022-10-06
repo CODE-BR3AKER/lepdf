@@ -79,8 +79,6 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/netlify-files",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
@@ -137,7 +135,10 @@ export default {
       orientation: "portrait",
     },
   },
-  content: { markdown: { remarkPlugins: ["remark-emoji"] } },
+  content: {
+    markdown: { remarkPlugins: ["remark-emoji"] },
+    fullTextSearchFields: ["Module", "Filename"],
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

@@ -1,8 +1,17 @@
 <template>
   <main class="w-full">
-    <Search />
+    <Search>
+      <input
+        type="search"
+        name="query"
+        id="query"
+        v-model="query"
+        placeholder="Search Module, Cours, Chapitre..."
+        class="w-full md:w-10/12 px-2 py-1 md:p-4 bg-search md:bg-transparent text-sm md:text-base font-light text-text"
+      />
+    </Search>
     <section class="pt-4 md:pt-16 flex mx-auto justify-center items-center">
-      <Table :files="path[0].body" />
+      <Table :files="path" />
     </section>
   </main>
 </template>
@@ -13,16 +22,25 @@ main {
 </style>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const path = await $content("paths", params.slug).fetch();
-    return {
-      path,
-    };
-  },
   head() {
     return {
       title: "Search",
     };
+  },
+  data() {
+    return {
+      query: "",
+      path: [],
+    };
+  },
+  watch: {
+    async query(query) {
+      if (!query) {
+        this.path = await this.$content("paths").fetch();
+        return;
+      }
+      this.path = await this.$content("paths").search(query).fetch();
+    },
   },
 };
 </script>

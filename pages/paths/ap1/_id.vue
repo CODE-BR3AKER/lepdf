@@ -12,10 +12,12 @@
 </template>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const path = await $content("paths", params.slug).fetch();
+  async asyncData({ $content, params, route }) {
+    const files = await $content("paths", params.slug)
+      .where({ Module: route.params.id })
+      .fetch();
     return {
-      path,
+      files,
     };
   },
   head() {
@@ -27,13 +29,6 @@ export default {
     return {
       module: this.$route.params.id,
     };
-  },
-  computed: {
-    files() {
-      return this.path[0].body.filter((res) => {
-        return res.Module == this.$route.params.id;
-      });
-    },
   },
 };
 </script>

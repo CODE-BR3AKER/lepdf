@@ -5,18 +5,17 @@
     <select
       class="md:w-1/12 p-4 bg-secondary text-text md:block hidden border-r-8 border-transparent"
     >
+      <option value="" selected disabled hidden>Path</option>
       <option>AP-1</option>
       <option>AP-2</option>
       <option>Info</option>
       <option>Data</option>
+      <option>Civil</option>
+      <option>Mécanique</option>
+      <option>Energetique</option>
+      <option>Environement</option>
     </select>
-    <input
-      type="search"
-      name="search"
-      id="search"
-      placeholder="Search Module, Cours, Chapitre..."
-      class="w-full md:w-10/12 px-2 py-1 md:p-4 bg-search md:bg-transparent text-sm md:text-base font-light text-text"
-    />
+    <slot></slot>
     <button
       class="hidden bg-main text-white w-1/12 p-4 md:flex justify-center items-center"
     >
