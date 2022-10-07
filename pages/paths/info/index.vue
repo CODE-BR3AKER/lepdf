@@ -18,14 +18,14 @@
             />
           </div>
           <div>
-            <p class="block text-lg font-medium text-title mt-3">
+            <p class="block text-lg font-medium text-title my-3">
               But de formation
             </p>
             <p class="text-text">
               Les ingénieurs en informatique sont très appréciés pour leur
               polyvalence. Ils peuvent exercer dans de grandes SSII, start-up,
-              laboratoires de R&D publics ou privés, services informatiques des
-              grandes sociétés ou des administrations.
+              laboratoires de R&amp;D publics ou privés, services informatiques
+              des grandes sociétés ou des administrations.
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@
   </main>
 </template>
 <script>
-import pathsData from "~/assets/info.json";
+import pathsData from "~/assets/data/info.json";
 export default {
   head() {
     return {

@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "fas fa-sitemap",
+    "href": "https://cs50.harvard.edu/x/2022/",
+    "name": "Harvard: CS-50"
+  },
+  {
+    "icon": "fas fa-server",
+    "href": "https://web.stanford.edu/class/cs142/lectures.html",
+    "name": "Stanford: Web Dev CS-142"
+  },
+  {
+    "icon": "fas fa-lock",
+    "href": "https://web.stanford.edu/class/cs253/",
+    "name": "Stanford: Security CS-253"
+  },
+  {
+    "icon": "fas fa-laptop-code",
+    "href": "https://www.theodinproject.com/",
+    "name": "The Odin Project"
+  },
+  {
+    "icon": "fab fa-free-code-camp",
+    "href": "https://www.freecodecamp.org/",
+    "name": "Free Code Camp"
+  },
+  {
+    "icon": "fas fa-directions",
+    "href": "https://roadmap.sh",
+    "name": "Coding Roadmap"
+  },
+  {
+    "icon": "fas fa-code",
+    "href": "https://www.udacity.com/school-of-programming",
+    "name": "Udacity: Programming"
+  },
+  {
+    "icon": "fas fa-code-branch",
+    "href": "https://learngitbranching.js.org/",
+    "name": "Git Branching"
+  }
+]

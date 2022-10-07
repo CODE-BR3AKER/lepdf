@@ -9,26 +9,26 @@
       class="pt-2 md:pt-16 flex mx-auto justify-center items-center flex-wrap mb-12"
     >
       <Card
-        v-for="(sub, id) in subjects"
+        v-for="(path, id) in pathsData"
         :key="id"
-        :name="sub.name"
-        :icon="sub.icon"
-        :link="`paths/` + sub.idx"
+        :name="path.name"
+        :icon="path.icon"
+        :link="`paths/` + path.idx"
       />
     </section>
   </main>
 </template>
 <script>
-import pathsData from "~/assets/paths.json";
 export default {
+  async asyncData({ $content }) {
+    const pathsData = await $content("subjects").fetch();
+    return {
+      pathsData,
+    };
+  },
   head() {
     return {
       title: "Resources",
-    };
-  },
-  data() {
-    return {
-      subjects: pathsData,
     };
   },
 };

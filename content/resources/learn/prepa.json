@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "fab fa-grav",
+    "href": "https://oyc.yale.edu/NODE/206",
+    "name": "Yale University: Newtonian Physics"
+  },
+  {
+    "icon": "fas fa-atom",
+    "href": "https://oyc.yale.edu/NODE/211",
+    "name": "Yale University: Quantum Mechanics"
+  },
+  {
+    "icon": "fas fa-vials",
+    "href": "https://oyc.yale.edu/chemistry/chem-125a",
+    "name": "Yale University: Organic Chemistry"
+  },
+  {
+    "icon": "fab fa-free-code-camp",
+    "href": "https://www.youtube.com/watch?v=JnTa9XtvmfI",
+    "name": "Free Code Camp: Linear Algebra 1"
+  },
+  {
+    "icon": "fab fa-free-code-camp",
+    "href": "https://www.youtube.com/watch?v=DJ6YwBN7Ya8",
+    "name": "Free Code Camp: Linear Algebra 2"
+  },
+  {
+    "icon": "fas fa-infinity",
+    "href": "https://www.khanacademy.org/math/ap-calculus-ab",
+    "name": "Khan Academy: AP Calculus AB"
+  },
+  {
+    "icon": "fas fa-infinity",
+    "href": "https://www.khanacademy.org/math/ap-calculus-bc",
+    "name": "Khan Academy: AP Calculus BC"
+  },
+  {
+    "icon": "fas fa-language",
+    "href": "https://www.engvid.com/",
+    "name": "Eng Vid: Advance Your English Skills"
+  }
+]

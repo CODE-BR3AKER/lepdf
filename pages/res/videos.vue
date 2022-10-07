@@ -7,16 +7,10 @@
     </h1>
     <section class="grid-3 pt-16 mx-auto justify-between">
       <div class="flex flex-col items-center">
+        <List title="Prépa" :links="ap">
+          <IconYtb />
+        </List>
         <List title="Coding Channels" :links="coding">
-          <IconYtb />
-        </List>
-        <List title="Civil" :links="general">
-          <IconYtb />
-        </List>
-        <List title="Data Science" :links="general">
-          <IconYtb />
-        </List>
-        <List title="Prepa" :links="general">
           <IconYtb />
         </List>
       </div>
@@ -38,72 +32,28 @@
 </template>
 <script>
 export default {
-  data() {
+  async asyncData({ $content }) {
+    const ap = await $content("resources", { deep: true })
+      .where({ slug: "ap" })
+      .fetch();
+    const coding = await $content("resources", { deep: true })
+      .where({ slug: "coding" })
+      .fetch();
+    const general = await $content("resources", { deep: true })
+      .where({ slug: "general" })
+      .fetch();
+    const records = await $content("resources", { deep: true })
+      .where({ slug: "records" })
+      .fetch();
+    const workshops = await $content("resources", { deep: true })
+      .where({ slug: "workshops" })
+      .fetch();
     return {
-      coding: [
-        {
-          href: "https://www.youtube.com/c/Freecodecamp",
-          name: "Freecodecamp",
-        },
-        {
-          href: "https://www.youtube.com/c/TraversyMedia",
-          name: "Traversy Media",
-        },
-        {
-          href: "https://www.youtube.com/c/Fireship",
-          name: "Fireship io",
-        },
-        {
-          href: "https://www.youtube.com/c/gotreehouse",
-          name: "Treehouse",
-        },
-        {
-          href: "https://www.youtube.com/c/FKnight",
-          name: "Forest Knight",
-        },
-        {
-          href: "https://www.youtube.com/c/WebDevSimplified",
-          name: "Web deb simplified",
-        },
-      ],
-      workshops: [
-        {
-          href: "https://www.youtube.com/c/Freecodecamp",
-          name: "Freecodecamp",
-        },
-        {
-          href: "https://www.youtube.com/c/TraversyMedia",
-          name: "Traversy Media",
-        },
-        {
-          href: "https://www.youtube.com/c/Fireship",
-          name: "Fireship io",
-        },
-        {
-          href: "https://www.youtube.com/c/gotreehouse",
-          name: "Treehouse",
-        },
-        {
-          href: "https://www.youtube.com/c/FKnight",
-          name: "Forest Knight",
-        },
-        {
-          href: "https://www.youtube.com/c/WebDevSimplified",
-          name: "Web deb simplified",
-        },
-      ],
-      general: [
-        {
-          href: "https://www.youtube.com/c/StuffMadeHere",
-          name: "Stuff Made Here",
-        },
-      ],
-      records: [
-        {
-          href: "https://www.youtube.com/c/StuffMadeHere",
-          name: "Stuff Made Here",
-        },
-      ],
+      ap,
+      coding,
+      general,
+      records,
+      workshops,
     };
   },
   head() {

@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "fab fa-github",
+    "href": "https://github.com/academic/awesome-datascience",
+    "name": "Awesome Data Science"
+  },
+  {
+    "icon": "fas fa-clipboard-list",
+    "href": "https://www.learndatasci.com/",
+    "name": "Learn Data Sci"
+  },
+  {
+    "icon": "fab fa-python",
+    "href": "https://www.learnpython.org/",
+    "name": "Learn Python"
+  },
+  {
+    "icon": "fas fa-chart-pie",
+    "href": "https://www.udacity.com/school-of-data-science",
+    "name": "Udacity: Data Science"
+  },
+  {
+    "icon": "fas fa-certificate",
+    "href": "https://www.coursera.org/professional-certificates/ai-engineer",
+    "name": "IBM AI Engineering"
+  },
+  {
+    "icon": "fas fa-brain",
+    "href": "https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python",
+    "name": "HarvardX: AI with Python"
+  },
+  {
+    "icon": "fas fa-directions",
+    "href": "https://i.am.ai/roadmap",
+    "name": "AI roadmap"
+  },
+  {
+    "icon": "fas fa-robot",
+    "href": "https://developers.google.com/machine-learning/crash-course",
+    "name": "Google ML course"
+  }
+]

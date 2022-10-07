@@ -93,134 +93,20 @@
 </template>
 <script>
 export default {
-  data() {
+  async asyncData({ $content }) {
+    const ap = await $content("resources", { deep: true })
+      .where({ slug: "prepa" })
+      .fetch();
+    const info = await $content("resources", { deep: true })
+      .where({ slug: "info" })
+      .fetch();
+    const data = await $content("resources", { deep: true })
+      .where({ slug: "data" })
+      .fetch();
     return {
-      ap: [
-        {
-          icon: "fab fa-grav",
-          href: "https://oyc.yale.edu/NODE/206",
-          name: "Yale University: Newtonian Physics",
-        },
-        {
-          icon: "fas fa-atom",
-          href: "https://oyc.yale.edu/NODE/211",
-          name: "Yale University: Quantum Mechanics",
-        },
-        {
-          icon: "fas fa-vials",
-          href: "https://oyc.yale.edu/chemistry/chem-125a",
-          name: "Yale University: Organic Chemistry",
-        },
-        {
-          icon: "fab fa-free-code-camp",
-          href: "https://www.youtube.com/watch?v=JnTa9XtvmfI",
-          name: "Free Code Camp: Linear Algebra 1",
-        },
-        {
-          icon: "fab fa-free-code-camp",
-          href: "https://www.youtube.com/watch?v=DJ6YwBN7Ya8",
-          name: "Free Code Camp: Linear Algebra 2",
-        },
-        {
-          icon: "fas fa-infinity",
-          href: "https://www.khanacademy.org/math/ap-calculus-ab",
-          name: "Khan Academy: AP Calculus AB",
-        },
-        {
-          icon: "fas fa-infinity",
-          href: "https://www.khanacademy.org/math/ap-calculus-bc",
-          name: "Khan Academy: AP Calculus BC",
-        },
-        {
-          icon: "fas fa-language",
-          href: "https://www.engvid.com/",
-          name: "Eng Vid: Advance Your English Skills",
-        },
-      ],
-      info: [
-        {
-          icon: "fas fa-sitemap",
-          href: "https://cs50.harvard.edu/x/2022/",
-          name: "Harvard: CS-50",
-        },
-        {
-          icon: "fas fa-server",
-          href: "https://web.stanford.edu/class/cs142/lectures.html",
-          name: "Stanford: Web Dev CS-142",
-        },
-        {
-          icon: "fas fa-lock",
-          href: "https://web.stanford.edu/class/cs253/",
-          name: "Stanford: Security CS-253",
-        },
-        {
-          icon: "fas fa-laptop-code",
-          href: "https://www.theodinproject.com/",
-          name: "The Odin Project",
-        },
-        {
-          icon: "fab fa-free-code-camp",
-          href: "https://www.freecodecamp.org/",
-          name: "Free Code Camp",
-        },
-        {
-          icon: "fas fa-directions",
-          href: "https://roadmap.sh",
-          name: "Coding Roadmap",
-        },
-        {
-          icon: "fas fa-code",
-          href: "https://www.udacity.com/school-of-programming",
-          name: "Udacity: Programming",
-        },
-        {
-          icon: "fas fa-code-branch",
-          href: "https://learngitbranching.js.org/",
-          name: "Git Branching",
-        },
-      ],
-      data: [
-        {
-          icon: "fab fa-github",
-          href: "https://github.com/academic/awesome-datascience",
-          name: "Awesome Data Science",
-        },
-        {
-          icon: "fas fa-clipboard-list",
-          href: "https://www.learndatasci.com/",
-          name: "Learn Data Sci",
-        },
-        {
-          icon: "fab fa-python",
-          href: "https://www.learnpython.org/",
-          name: "Learn Python",
-        },
-        {
-          icon: "fas fa-chart-pie",
-          href: "https://www.udacity.com/school-of-data-science",
-          name: "Udacity: Data Science",
-        },
-        {
-          icon: "fas fa-certificate",
-          href: "https://www.coursera.org/professional-certificates/ai-engineer",
-          name: "IBM AI Engineering",
-        },
-        {
-          icon: "fas fa-brain",
-          href: "https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python",
-          name: "HarvardX: AI with Python",
-        },
-        {
-          icon: "fas fa-directions",
-          href: "https://i.am.ai/roadmap",
-          name: "AI roadmap",
-        },
-        {
-          icon: "fas fa-robot",
-          href: "https://developers.google.com/machine-learning/crash-course",
-          name: "Google ML course",
-        },
-      ],
+      ap,
+      info,
+      data,
     };
   },
   head() {

@@ -1,5 +1,5 @@
 <template>
-  <main class="md:max-w-6xl mx-6 md:mx-auto">
+  <main class="md:max-w-6xl mx-6 md:mx-auto min-h-screen">
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
@@ -7,30 +7,18 @@
     </h1>
     <section class="grid-3 pt-16 justify-between">
       <div class="flex flex-col items-center">
-        <List title="Coding Channels" :links="coding">
-          <IconFb />
-        </List>
-        <List title="Civil" :links="general">
-          <IconInsta />
-        </List>
-        <List title="Data Science" :links="general">
-          <IconInsta />
-        </List>
-        <List title="Prepa" :links="general">
+        <List title="Facebook" :links="fb">
           <IconFb />
         </List>
       </div>
       <div class="flex flex-col items-center">
-        <List title="Général" :links="general">
-          <IconYtb />
-        </List>
-        <List title="Workshops" :links="workshops">
+        <List title="Instagram" :links="insta">
           <IconInsta />
         </List>
       </div>
       <div class="flex flex-col items-center">
-        <List title="Records des séances" :links="records">
-          <IconFb />
+        <List title="Whatsapp" :links="wtsp">
+          <IconWtsp />
         </List>
       </div>
     </section>
@@ -38,77 +26,25 @@
 </template>
 <script>
 export default {
-  data() {
+  async asyncData({ $content }) {
+    const fb = await $content("resources", { deep: true })
+      .where({ slug: "fb" })
+      .fetch();
+    const insta = await $content("resources", { deep: true })
+      .where({ slug: "insta" })
+      .fetch();
+    const wtsp = await $content("resources", { deep: true })
+      .where({ slug: "wtsp" })
+      .fetch();
     return {
-      coding: [
-        {
-          href: "https://www.youtube.com/c/Freecodecamp",
-          name: "Freecodecamp",
-        },
-        {
-          href: "https://www.youtube.com/c/TraversyMedia",
-          name: "Traversy Media",
-        },
-        {
-          href: "https://www.youtube.com/c/Fireship",
-          name: "Fireship io",
-        },
-        {
-          href: "https://www.youtube.com/c/gotreehouse",
-          name: "Treehouse",
-        },
-        {
-          href: "https://www.youtube.com/c/FKnight",
-          name: "Forest Knight",
-        },
-        {
-          href: "https://www.youtube.com/c/WebDevSimplified",
-          name: "Web deb simplified",
-        },
-      ],
-      workshops: [
-        {
-          href: "https://www.youtube.com/c/Freecodecamp",
-          name: "Freecodecamp",
-        },
-        {
-          href: "https://www.youtube.com/c/TraversyMedia",
-          name: "Traversy Media",
-        },
-        {
-          href: "https://www.youtube.com/c/Fireship",
-          name: "Fireship io",
-        },
-        {
-          href: "https://www.youtube.com/c/gotreehouse",
-          name: "Treehouse",
-        },
-        {
-          href: "https://www.youtube.com/c/FKnight",
-          name: "Forest Knight",
-        },
-        {
-          href: "https://www.youtube.com/c/WebDevSimplified",
-          name: "Web deb simplified",
-        },
-      ],
-      general: [
-        {
-          href: "https://www.youtube.com/c/StuffMadeHere",
-          name: "Stuff Made Here",
-        },
-      ],
-      records: [
-        {
-          href: "https://www.youtube.com/c/StuffMadeHere",
-          name: "Stuff Made Here",
-        },
-      ],
+      fb,
+      insta,
+      wtsp,
     };
   },
   head() {
     return {
-      title: "Videos",
+      title: "Groupes et Pages",
     };
   },
 };

@@ -58,11 +58,11 @@
       class="hidden my-12 md:flex mx-auto justify-center items-center flex-wrap"
     >
       <Card
-        v-for="(sub, id) in subjects"
+        v-for="(path, id) in pathsData"
         :key="id"
-        :name="sub.name"
-        :icon="sub.icon"
-        :link="`paths/` + sub.idx"
+        :name="path.name"
+        :icon="path.icon"
+        :link="`paths/` + path.idx"
       />
     </section>
     <h2 class="mt-12" id="about">
@@ -156,9 +156,9 @@
 </template>
 
 <script>
-import pathsData from "~/assets/paths.json";
 export default {
   async asyncData({ $content }) {
+    const pathsData = await $content("subjects").fetch();
     const posts = await $content("blog")
       .sortBy("updatedAt", "desc")
       .only(["title", "slug", "thumb", "updatedAt", "author"])
@@ -166,16 +166,12 @@ export default {
       .fetch();
     return {
       posts,
+      pathsData,
     };
   },
   head() {
     return {
       title: "Home",
-    };
-  },
-  data() {
-    return {
-      subjects: pathsData,
     };
   },
   methods: {

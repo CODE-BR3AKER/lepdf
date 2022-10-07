@@ -17,14 +17,14 @@
             />
           </div>
           <div>
-            <p class="block text-lg font-medium text-title mt-3">
+            <p class="block text-lg font-medium text-title my-3">
               But de formation
             </p>
             <p class="text-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores quos veniam, provident corporis fuga eaque iste
-              eligendi magni culpa, ex deleniti, delectus quo placeat itaque
-              quisquam aliquid recusandae distinctio assumenda?
+              Initier les élèves par un enseignement général sur les sciences
+              fondamentales afin d'approfondir leur connaissance technique et
+              méthodologique et de leur donner une vue d'ensemble sur ce qui
+              pourra faire l'objet de leur spécialisation.
             </p>
           </div>
         </div>
@@ -89,7 +89,7 @@
   </main>
 </template>
 <script>
-import pathsData from "~/assets/ap1.json";
+import pathsData from "~/assets/data/ap1.json";
 export default {
   head() {
     return {

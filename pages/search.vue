@@ -22,8 +22,8 @@ main {
 </style>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const paths = await $content("paths", params.slug).fetch();
+  async asyncData({ $content }) {
+    const paths = await $content("paths").where({ slug: "all" }).fetch();
     return {
       paths,
     };
