@@ -2,12 +2,19 @@
 
 ![readme.jpg](/static/readme.jpg)
 
-:brush: Design: [Figma File](https://www.figma.com/file/hqP3BFRphC7hGS4R3JAJec/ensah.org?node-id=0%3A1)
-:link: Live Preview: https://ensah.org
+- :art: Design: [Figma File](https://www.figma.com/file/hqP3BFRphC7hGS4R3JAJec/ensah.org?node-id=0%3A1)
+- :link: Live Preview: https://ensah.org
 
 ## Features:
 
-- PWA
+- :wrench: Progressive Web App
+- :mag: Full Text Search
+- :iphone: Mobile First Design
+- :heart_decoration: Articles with Likes (using Fauna DB)
+
+## Content Architecture
+
+![ContentDiagram.jpg](/static/ContentDiagram.jpg)
 
 ## Build Setup
 
