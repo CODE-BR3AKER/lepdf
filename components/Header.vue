@@ -43,7 +43,7 @@
         <nuxt-link to="/search" class="mr-4">
           <IconSearch />
         </nuxt-link>
-        <a href="#">
+        <a href="javascript:void(0)">
           <IconBell />
         </a>
         <slot name="switch"> </slot>

@@ -20,6 +20,6 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <circle cx="16" cy="4" r="4" fill="#F15523" />
+    <!--<circle cx="16" cy="4" r="4" fill="#F15523" />-->
   </svg>
 </template>

@@ -11,7 +11,7 @@
       />
     </Search>
     <section class="pt-4 md:pt-16 flex mx-auto justify-center items-center">
-      <Table :files="path" />
+      <Table :files="paths" />
     </section>
   </main>
 </template>
@@ -22,6 +22,12 @@ main {
 </style>
 <script>
 export default {
+  async asyncData({ $content, params }) {
+    const paths = await $content("paths", params.slug).fetch();
+    return {
+      paths,
+    };
+  },
   head() {
     return {
       title: "Search",
@@ -30,16 +36,15 @@ export default {
   data() {
     return {
       query: "",
-      path: [],
     };
   },
   watch: {
     async query(query) {
       if (!query) {
-        this.path = await this.$content("paths").fetch();
+        this.paths = await this.$content("paths").fetch();
         return;
       }
-      this.path = await this.$content("paths").search(query).fetch();
+      this.paths = await this.$content("paths").search(query).fetch();
     },
   },
 };
