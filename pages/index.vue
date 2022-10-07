@@ -160,7 +160,7 @@ import pathsData from "~/assets/paths.json";
 export default {
   async asyncData({ $content }) {
     const posts = await $content("blog")
-      .sortBy("createdAt", "desc")
+      .sortBy("updatedAt", "desc")
       .only(["title", "slug", "thumb", "updatedAt", "author"])
       .limit(3)
       .fetch();

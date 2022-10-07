@@ -127,7 +127,7 @@
             class="px-5 py-2 bg-main text-white mr-5 border border-main hover:bg-transparent hover:text-main"
             >Resources</a
           ><a
-            href="mailto:phoenixade.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20resource"
+            href="mailto:phoenixbde.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20resource"
             target="_blank"
             class="px-5 py-2 border text-main border-main hover:bg-main hover:text-white"
           >

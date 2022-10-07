@@ -61,7 +61,7 @@
         Voulez-vous contribuer au blog ? Envoyer vos idées sur
         <a
           class="text-main"
-          href="mailto:phoenixade.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20article"
+          href="mailto:phoenixbde.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20article"
           target="_blank"
           >mail</a
         >.
