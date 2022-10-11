@@ -1,5 +1,5 @@
 ---
-title: Optimizer son profil linkedin
+title: Optimize your Linkedin profile
 updatedAt: "2022-08-25T09:04:06.3287Z"
 thumb: "/blog/linkedin.jpg"
 description: "Avec plus de 600 millions de profils professionnels, Linkedin offre un réseau presque illimité de connexions et d'opportunités d'emploi."

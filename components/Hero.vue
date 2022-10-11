@@ -111,15 +111,15 @@
           Star on Github
         </a>
         <h1
-          class="text-5xl md:text-6xl font-bold leading-none max-w-2xl md:max-w-3xl mb-8 text-title"
+          class="text-5xl md:text-6xl font-bold leading-none max-w-xl md:max-w-2xl mb-8 text-title"
         >
-          Archive Des Resources
-          <span class="text-main">pour Les Ingénieurs </span>
+          Looking For That PDF
+          <span class="text-main">look No More </span>
         </h1>
         <p class="max-w-lg text-xl font-light text-text mb-16">
-          site de communauté qui vise à documenter les archives et partager avec
-          vous des resources, des conseils et des opportunities de stage
-          /travail.
+          Le Pdf is an opensource project solving the common problem of
+          undescriptive pdf docs &amp; folders by indexing &amp; categorizing
+          resources making them accessible.
         </p>
         <div class="mb-24 text-xl font-medium">
           <a
@@ -127,11 +127,11 @@
             class="px-5 py-2 bg-main text-white mr-5 border border-main hover:bg-transparent hover:text-main"
             >Resources</a
           ><a
-            href="mailto:phoenixbde.ensah@gmail.com?subject=EnsahOrg:%20demande%20d'ajout%20d'une%20resource"
+            href="mailto:zakariazarkti@gmail.com?subject=LePDF:%20demande%20d'ajout%20d'une%20resource"
             target="_blank"
             class="px-5 py-2 border text-main border-main hover:bg-main hover:text-white"
           >
-            Contribuer</a
+            Contribute</a
           >
         </div>
       </div>

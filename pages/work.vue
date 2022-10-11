@@ -6,7 +6,7 @@
       Travail et Stage
     </h1>
     <h2>
-      Essentiels
+      Essentials
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,7 +34,7 @@
       />
     </section>
     <h2>
-      Où chercher
+      Where to look
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -62,7 +62,7 @@
       />
     </section>
     <h2>
-      Conseils et Divers
+      Advice &amp; Experience
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"

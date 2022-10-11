@@ -3,7 +3,7 @@
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
-      Groupes &amp; Pages
+      Pages &amp; Groups
     </h1>
     <section class="grid-3 pt-16 justify-between">
       <div class="flex flex-col items-center">

@@ -3,7 +3,7 @@
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
-      Outils Scinetifiques
+      Scinetific Tools
     </h1>
     <section class="my-12 flex mx-auto justify-center items-center flex-wrap">
       <HyperCard

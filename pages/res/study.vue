@@ -3,7 +3,7 @@
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
-      Formations En Ligne
+      Online Courses
     </h1>
     <h2>
       AP

@@ -1,5 +1,5 @@
 ---
-title: 5 projets CAD pour les novices
+title: 5 CAD projects for beginners
 updatedAt: "2022-08-20T01:06:48.234Z"
 thumb: "/blog/cad.jpg"
 description: "Computer Aided Design est une méthode de simulation des conceptions 2D et 3D par ordinateur. Les années 1990 ont donné naissance à des outils comme CATIA et AutoCAD, rendant la conception assistée par ordinateur accessible à une variété de secteurs."

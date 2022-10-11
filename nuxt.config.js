@@ -23,9 +23,9 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: "ensah.org | %s",
+    titleTemplate: "lePDF | %s",
     htmlAttrs: {
-      lang: "fr",
+      lang: "en",
     },
     meta: [
       { charset: "utf-8" },
@@ -63,7 +63,6 @@ export default {
       },
     ],
   },
-
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ["~/assets/style.css"],
   loading: {
@@ -113,8 +112,8 @@ export default {
   },
   pwa: {
     manifest: {
-      name: "ensah.org",
-      short_name: "ensah",
+      name: "LePDF",
+      short_name: "LePDF",
       description: "pdf classroom for engineering archives",
       icons: [
         {
@@ -130,7 +129,7 @@ export default {
       ],
       theme_color: "#F15523",
       background_color: "#ffffff",
-      lang: "fr",
+      lang: "en",
       display: "standalone",
       orientation: "portrait",
     },

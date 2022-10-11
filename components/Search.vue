@@ -11,9 +11,9 @@
       <option>Info</option>
       <option>Data</option>
       <option>Civil</option>
-      <option>Mécanique</option>
-      <option>Energetique</option>
-      <option>Environement</option>
+      <option>Mechanics</option>
+      <option>Energy</option>
+      <option>Environment</option>
     </select>
     <slot></slot>
     <button

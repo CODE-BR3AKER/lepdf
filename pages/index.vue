@@ -2,7 +2,7 @@
   <main class="max-w-6xl mx-auto">
     <Hero />
     <h2>
-      Derniers posts
+      Last posts
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -36,7 +36,7 @@
       />
     </section>
     <h2 class="mt-12 md:flex hidden" id="paths">
-      Filieres
+      Paths
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,7 +66,7 @@
       />
     </section>
     <h2 class="mt-12" id="about">
-      À propos
+      About
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -87,16 +87,15 @@
     <section
       class="my-12 flex justify-between lg:flex-row flex-col text-text px-8 lg:px-0 max-w-5xl mx-auto"
     >
-      <img src="ensah.jpg" alt="ensah pic" class="mx-4" loading="lazy" />
+      <img src="library.jpg" alt="library pic" class="mx-4" loading="lazy" />
       <div class="mx-4 lg:mx-10 flex flex-col justify-around">
         <h3 class="font-medium text-3xl mt-8 lg:mt-0 text-title">
-          L'idée de site
+          How it started
         </h3>
         <p class="text-base max-w-xl mb-4 lg:mb-0">
-          Initiative d’un ensahist, pour documenter les resources souvent
-          partagés dans les groupes whatsapp et les drives pour une mellieur
-          accéssibilité. Le contenu maintenant est gérer par l’association des
-          étudiants phoenix.
+          The initiative of an Ex-ensahist, to document the resources often
+          shared in Whatsapp groups and drives for better accessibility.
+          Contributions are always welcome!
         </p>
         <svg
           class="mb-4 lg:mb-0"
@@ -116,7 +115,7 @@
       </div>
     </section>
     <h2 class="my-12">
-      Resources diverses
+      Diverse resources
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -135,19 +134,15 @@
       </svg>
     </h2>
     <section class="mb-12 flex mx-auto justify-center flex-wrap items-center">
+      <Card name="Scientific Tools" icon="fas fa-calculator" link="res/tools" />
       <Card
-        name="Outils scientifiques"
-        icon="fas fa-calculator"
-        link="res/tools"
-      />
-      <Card
-        name="Formations en ligne"
+        name="Online Courses"
         icon="fas fa-graduation-cap"
         link="res/study"
       />
-      <Card name="Resources Videos" icon="fab fa-youtube" link="res/videos" />
+      <Card name="Videos" icon="fab fa-youtube" link="res/videos" />
       <Card
-        name="Groupes et Pages"
+        name="Pages &amp; Groups"
         icon="fab fa-facebook-square"
         link="res/grps"
       />
@@ -177,8 +172,8 @@ export default {
   methods: {
     formatDate(date) {
       let da = new Date(date);
-      let ans = new Intl.DateTimeFormat("fr-FR", {
-        dateStyle: "full",
+      let ans = new Intl.DateTimeFormat("en-EN", {
+        dateStyle: "medium",
       }).format(da);
       return ans;
     },

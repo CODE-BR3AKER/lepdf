@@ -3,7 +3,7 @@
     <h1
       class="hidden md:block text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
-      Filières
+      Paths
     </h1>
     <section
       class="pt-2 md:pt-16 flex mx-auto justify-center items-center flex-wrap mb-12"

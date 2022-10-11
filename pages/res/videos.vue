@@ -3,7 +3,7 @@
     <h1
       class="text-3xl md:text-4xl font-bold leading-none mt-16 text-title text-center mx-auto"
     >
-      Resources Videos
+      Video Resources
     </h1>
     <section class="grid-3 pt-16 mx-auto justify-between">
       <div class="flex flex-col items-center">
