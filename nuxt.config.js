@@ -133,6 +133,7 @@ export default {
       display: "standalone",
       orientation: "portrait",
       capture_links: "existing-client-navigate",
+      launch_handler: { route_to: "existing-client-retain" },
     },
   },
   content: {
