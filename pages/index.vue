@@ -33,6 +33,7 @@
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
         :author="post.author"
+        :tag="post.category"
       />
     </section>
     <h2 class="mt-12 md:flex hidden" id="paths">
@@ -94,7 +95,7 @@
         </h3>
         <p class="text-base max-w-xl mb-4 lg:mb-0">
           The initiative of an Ex-ensahist, to document the resources often
-          shared in Whatsapp groups and drives for better accessibility.
+          shared in Whatsapp groups and Google drive for better accessibility.
           Contributions are always welcome!
         </p>
         <svg
@@ -156,7 +157,7 @@ export default {
     const pathsData = await $content("subjects").fetch();
     const posts = await $content("blog")
       .sortBy("updatedAt", "desc")
-      .only(["title", "slug", "thumb", "updatedAt", "author"])
+      .only(["title", "slug", "thumb", "updatedAt", "author", "category"])
       .limit(3)
       .fetch();
     return {

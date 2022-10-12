@@ -7,7 +7,7 @@
     </h1>
     <section class="grid-3 pt-16 mx-auto justify-between">
       <div class="flex flex-col items-center">
-        <List title="Prépa" :links="ap">
+        <List title="AP" :links="ap">
           <IconYtb />
         </List>
         <List title="Coding Channels" :links="coding">
@@ -15,7 +15,7 @@
         </List>
       </div>
       <div class="flex flex-col items-center">
-        <List title="Général" :links="general">
+        <List title="General" :links="general">
           <IconYtb />
         </List>
         <List title="Workshops" :links="workshops">
@@ -23,7 +23,7 @@
         </List>
       </div>
       <div class="flex flex-col items-center">
-        <List title="Records des séances" :links="records">
+        <List title="Records" :links="records">
           <IconGdrive />
         </List>
       </div>

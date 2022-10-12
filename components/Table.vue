@@ -13,7 +13,7 @@
       <td class="w-1/3 md:w-1/4 text-center">
         <a :href="file.DirectLink" class="text-links" :download="file.FileName"
           ><i class="fas fa-file-download text-2xl hidden md:inline"></i
-          >Télécharger</a
+          >Download</a
         >
       </td>
     </tr>

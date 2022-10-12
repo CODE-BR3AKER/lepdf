@@ -13,7 +13,7 @@
         to="/blog"
         class="px-5 py-2 bg-transparent border border-main text-xl text-main hover:text-white hover:bg-main"
       >
-        Retour
+        Return
       </nuxt-link>
     </div>
 
@@ -58,7 +58,7 @@
       />
       <LikeBtn />
       <p class="mt-8 text-text">
-        Voulez-vous contribuer au blog ? Envoyer vos idées sur
+        You want to conribute to the blog ? Send your article via
         <a
           class="text-main"
           href="mailto:zakariazarkti@gmail.com?subject=LePDF:%20demande%20d'ajout%20d'une%20article"
@@ -163,5 +163,22 @@ export default {
 }
 .content-blog a {
   @apply underline text-links;
+}
+.content-blog table {
+  width: 100%;
+}
+.content-blog th {
+  background: var(--main);
+  color: white;
+}
+.content-blog table,
+th,
+td {
+  border: 2px solid var(--background);
+  border-collapse: collapse;
+  padding: 1em 2em;
+}
+.content-blog tr:nth-child(even) {
+  background-color: var(--secondary);
 }
 </style>

@@ -25,6 +25,7 @@
         :link="`/blog/` + post.slug"
         :date="formatDate(post.updatedAt)"
         :author="post.author"
+        :tag="post.category"
         :description="post.description.substring(0, 100) + `...`"
         loading="lazy"
       />
@@ -47,7 +48,7 @@ export default {
   methods: {
     formatDate(date) {
       let da = new Date(date);
-      let ans = new Intl.DateTimeFormat("fr-FR", {
+      let ans = new Intl.DateTimeFormat("en-EN", {
         dateStyle: "full",
       }).format(da);
       return ans;

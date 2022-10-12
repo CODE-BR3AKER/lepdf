@@ -13,7 +13,7 @@
         <div class="md:w-2/3 w-full">
           <p class="text-light text-text mt-4">
             <span class="rounded bg-main text-white font-medium mr-2 px-2 py-1">
-              Tips
+              {{ tag }}
             </span>
             {{ date }} . {{ author }}
           </p>
@@ -33,6 +33,6 @@
 </template>
 <script>
 export default {
-  props: ["title", "img", "link", "date", "author", "description"],
+  props: ["title", "img", "link", "date", "author", "description", "tag"],
 };
 </script>
