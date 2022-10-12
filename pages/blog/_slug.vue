@@ -92,6 +92,76 @@ export default {
   head() {
     return {
       title: this.post.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.post.description,
+        },
+        {
+          hid: "og-type",
+          property: "og:type",
+          content: "article",
+        },
+        {
+          hid: "og-title",
+          property: "og:title",
+          content: this.post.title,
+        },
+        {
+          hid: "og-desc",
+          property: "og:description",
+          content: this.post.description,
+        },
+        {
+          hid: "og-image",
+          property: "og:image",
+          content: "https://lepdf.live" + this.post.thumb,
+        },
+        {
+          hid: "og-url",
+          property: "og:url",
+          content: "https://lepdf.live/blog/" + this.post.slug,
+        },
+        {
+          hid: "og-author",
+          property: "og:author",
+          name: "author",
+          content: this.post.author,
+        },
+        {
+          hid: "og-publish_date",
+          property: "og:publish_date",
+          name: "publish_date",
+          content: this.post.updatedAt,
+        },
+        { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
+        {
+          hid: "t-domain",
+          name: "twitter:domain",
+          content: "lepdf.live/blog/" + this.post.slug,
+        },
+        {
+          hid: "t-url",
+          name: "twitter:url",
+          content: "https://lepdf.live/blog/" + this.post.slug,
+        },
+        {
+          hid: "t-title",
+          name: "twitter:title",
+          content: this.post.title,
+        },
+        {
+          hid: "t-description",
+          name: "twitter:description",
+          content: this.post.description,
+        },
+        {
+          hid: "t-image",
+          name: "twitter:image",
+          content: "https://lepdf.live" + this.post.thumb,
+        },
+      ],
     };
   },
   methods: {

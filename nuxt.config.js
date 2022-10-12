@@ -29,10 +29,57 @@ export default {
     },
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "Engineering PDFs Classroom",
+      },
       { name: "msapplication-TileColor", content: "#2b5797" },
       { name: "theme-color", content: "#ffffff" },
+      {
+        hid: "og-type",
+        property: "og:type",
+        content: "website",
+      },
+      {
+        hid: "og-title",
+        property: "og:title",
+        content: "LePDF",
+      },
+      {
+        hid: "og-desc",
+        property: "og:description",
+        content: "LePDF | Engineering PDFs Classroom",
+      },
+      {
+        hid: "og-image",
+        property: "og:image",
+        content: "https://lepdf.live/card.jpg",
+      },
+      { hid: "og-url", property: "og:url", content: "https://lepdf.live" },
+      { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
+      { hid: "t-domain", name: "twitter:domain", content: "lepdf.live" },
+      { hid: "t-url", name: "twitter:url", content: "https://lepdf.live" },
+      {
+        hid: "t-title",
+        name: "twitter:title",
+        content: "LePDF",
+      },
+      {
+        hid: "t-description",
+        name: "twitter:description",
+        content: "LePDF | Engineering PDFs Classroom",
+      },
+      {
+        hid: "t-image",
+        name: "twitter:image",
+        content: "https://lepdf.live/card.jpg",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
