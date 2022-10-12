@@ -132,6 +132,7 @@ export default {
       lang: "en",
       display: "standalone",
       orientation: "portrait",
+      capture_links: "existing-client-navigate",
     },
   },
   content: {

@@ -22,6 +22,7 @@
 export default {
   async asyncData({ $content, params, route }) {
     const files = await $content("paths", params.slug)
+      .where({ slug: "ap1" })
       .where({ Module: route.params.id })
       .fetch();
     return {
