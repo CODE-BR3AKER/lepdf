@@ -84,4 +84,21 @@ body {
   -webkit-box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1);
   -moz-box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1);
 }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
 </style>

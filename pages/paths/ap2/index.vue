@@ -1,6 +1,5 @@
 <template>
   <main class="max-w-6xl mx-auto">
-    <hr class="bg-text mt-4 lg:mx-12 mx-4" />
     <h1
       class="text-3xl md:text-4xl font-bold leading-none my-16 text-title text-center mx-auto"
     >

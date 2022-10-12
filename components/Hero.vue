@@ -90,7 +90,7 @@
       >
         <a
           class="inline-flex text-text md:hidden items-center p-2 border border-title hover:text-title mb-8 md:mb-0"
-          href="https://github.com/CODE-BR3AKER/ensah"
+          href="https://github.com/CODE-BR3AKER/lepdf"
           target="_blank"
         >
           <svg

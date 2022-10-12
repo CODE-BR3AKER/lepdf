@@ -5,6 +5,14 @@
     >
       {{ module }}
     </h1>
+    <div class="hidden md:flex my-4 justify-center items-center">
+      <nuxt-link
+        to="/paths/ap1"
+        class="px-5 py-2 bg-transparent border border-main text-xl text-main hover:text-white hover:bg-main"
+      >
+        Return
+      </nuxt-link>
+    </div>
     <section class="pt-16 flex mx-auto justify-center items-center">
       <Table :files="files" />
     </section>
