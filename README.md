@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/946595e3-6810-4ccf-91d8-d75368fb1dbd/deploy-status)](https://app.netlify.com/sites/ensah2/deploys)
+
 # LePDF.live
 
 ![readme.jpg](/static/readme.jpg)
