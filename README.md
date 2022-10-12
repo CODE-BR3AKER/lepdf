@@ -10,7 +10,8 @@
 - :wrench: Progressive Web App
 - :mag: Full Text Search
 - :iphone: Mobile First Design
-- :heart_decoration: Articles with Likes (using Fauna DB)
+- :heart_decoration: Like Button for articles (using Fauna DB)
+- :pencil2: Netlify CMS for editing the blog
 
 ## Content Architecture
 
