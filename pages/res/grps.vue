@@ -7,7 +7,7 @@
     </h1>
     <section class="grid-3 pt-16 justify-between">
       <div class="flex flex-col items-center">
-        <List title="Facebook" :links="fb">
+        <List title="Facebook Pages" :links="fb">
           <IconFb />
         </List>
       </div>
@@ -17,8 +17,8 @@
         </List>
       </div>
       <div class="flex flex-col items-center">
-        <List title="Whatsapp" :links="wtsp">
-          <IconWtsp />
+        <List title="Facebook Groups" :links="groups">
+          <IconFb />
         </List>
       </div>
     </section>
@@ -33,18 +33,18 @@ export default {
     const insta = await $content("resources", { deep: true })
       .where({ slug: "insta" })
       .fetch();
-    const wtsp = await $content("resources", { deep: true })
-      .where({ slug: "wtsp" })
+    const groups = await $content("resources", { deep: true })
+      .where({ slug: "groups" })
       .fetch();
     return {
       fb,
       insta,
-      wtsp,
+      groups,
     };
   },
   head() {
     return {
-      title: "Groupes et Pages",
+      title: "Pages & Groups",
     };
   },
 };

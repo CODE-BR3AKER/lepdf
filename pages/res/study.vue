@@ -111,7 +111,7 @@ export default {
   },
   head() {
     return {
-      title: "Formations en ligne",
+      title: "Online Courses",
     };
   },
 };

@@ -66,7 +66,7 @@ export default {
   },
   head() {
     return {
-      title: "Outils Scientifiques",
+      title: "Scientific Tools",
     };
   },
 };
